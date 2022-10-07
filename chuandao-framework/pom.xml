@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>auth</artifactId>
+        <groupId>com.jiangtao</groupId>
+        <version>${revision}</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>chuandao-framework</artifactId>
+    <packaging>pom</packaging>
+    <description>传道项目基础框架，用于管理基础组件的实现</description>
+    <modules>
+        <module>chaungdao-common</module>
+        <module>chuandao-spring-boot-starter-banner</module>
+    </modules>
+
+
+</project>
