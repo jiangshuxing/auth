@@ -11,6 +11,8 @@
         <module>chuandao-dependencies</module>
         <module>chuandao-framework</module>
         <module>chuandao-server</module>
+        <module>chuandao-module-system</module>
+
 
     </modules>
     <packaging>pom</packaging>
