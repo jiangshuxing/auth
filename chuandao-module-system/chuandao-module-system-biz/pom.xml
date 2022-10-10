@@ -32,12 +32,7 @@
         <dependency>
             <groupId>com.jiangtao</groupId>
             <artifactId>chuandao-spring-boot-starter-security</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-annotation</artifactId>
-            <version>3.5.2</version>
-            <scope>compile</scope>
+            <version>${revision}</version>
         </dependency>
         <dependency>
             <groupId>com.baomidou</groupId>

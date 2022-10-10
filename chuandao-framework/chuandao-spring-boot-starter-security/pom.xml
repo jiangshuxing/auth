@@ -50,12 +50,12 @@
             <artifactId>guava</artifactId>
         </dependency>
 
-<!--        &lt;!&ndash; 业务组件 &ndash;&gt;-->
-<!--        <dependency>-->
-<!--            <groupId>cn.iocoder.boot</groupId>-->
-<!--            <artifactId>yudao-module-system-api</artifactId> &lt;!&ndash; 需要使用它，进行 Token 的校验 &ndash;&gt;-->
-<!--            <version>${revision}</version>-->
-<!--        </dependency>-->
+                <!-- 业务组件 -->
+        <dependency>
+            <groupId>com.jiangtao</groupId>
+            <artifactId>chuandao-module-system-api</artifactId> <!-- 需要使用它，进行 Token 的校验 -->
+            <version>${revision}</version>
+        </dependency>
     </dependencies>
 
 </project>

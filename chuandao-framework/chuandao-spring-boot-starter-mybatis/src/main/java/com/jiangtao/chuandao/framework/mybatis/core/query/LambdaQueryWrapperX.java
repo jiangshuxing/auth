@@ -1,10 +1,10 @@
 package com.jiangtao.chuandao.framework.mybatis.core.query;
 
 import cn.hutool.core.util.ArrayUtil;
-import cn.iocoder.yudao.framework.common.util.collection.ArrayUtils;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.toolkit.CollectionUtils;
 import com.baomidou.mybatisplus.core.toolkit.support.SFunction;
+import com.jiangtao.chuandao.framework.common.util.collection.ArrayUtils;
 import org.springframework.util.StringUtils;
 
 import java.util.Collection;

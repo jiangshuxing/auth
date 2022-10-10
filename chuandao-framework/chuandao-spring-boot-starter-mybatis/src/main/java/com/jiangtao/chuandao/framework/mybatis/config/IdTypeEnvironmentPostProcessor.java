@@ -1,11 +1,11 @@
 package com.jiangtao.chuandao.framework.mybatis.config;
 
 import cn.hutool.core.util.StrUtil;
-import cn.iocoder.yudao.framework.common.util.collection.SetUtils;
-import cn.iocoder.yudao.framework.mybatis.core.enums.SqlConstants;
-import cn.iocoder.yudao.framework.mybatis.core.util.JdbcUtils;
 import com.baomidou.mybatisplus.annotation.DbType;
 import com.baomidou.mybatisplus.annotation.IdType;
+import com.jiangtao.chuandao.framework.common.util.collection.SetUtils;
+import com.jiangtao.chuandao.framework.mybatis.core.enums.SqlConstants;
+import com.jiangtao.chuandao.framework.mybatis.core.util.JdbcUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.env.EnvironmentPostProcessor;

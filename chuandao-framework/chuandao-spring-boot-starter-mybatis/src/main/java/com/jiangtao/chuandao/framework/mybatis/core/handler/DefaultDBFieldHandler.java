@@ -2,6 +2,7 @@ package com.jiangtao.chuandao.framework.mybatis.core.handler;
 
 import com.baomidou.mybatisplus.core.handlers.MetaObjectHandler;
 import com.jiangtao.chuandao.framework.mybatis.core.dataobject.BaseDO;
+import com.jiangtao.chuandao.framework.web.core.util.WebFrameworkUtils;
 import org.apache.ibatis.reflection.MetaObject;
 
 import java.util.Date;

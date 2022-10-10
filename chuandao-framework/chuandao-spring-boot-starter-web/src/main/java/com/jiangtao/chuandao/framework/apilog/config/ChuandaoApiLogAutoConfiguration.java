@@ -8,10 +8,12 @@ import com.jiangtao.chuandao.framework.apilog.core.service.ApiErrorLogFrameworkS
 import com.jiangtao.chuandao.framework.apilog.core.service.ApiErrorLogFrameworkServiceImpl;
 import com.jiangtao.chuandao.framework.common.enums.WebFilterOrderEnum;
 import com.jiangtao.chuandao.framework.web.config.ChuandaoWebAutoConfiguration;
+import com.jiangtao.chuandao.framework.web.config.WebProperties;
+import com.jiangtao.chuandao.module.infra.logger.ApiAccessLogApi;
+import com.jiangtao.chuandao.module.infra.logger.ApiErrorLogApi;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.AutoConfigureAfter;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
-import org.springframework.boot.autoconfigure.web.WebProperties;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

@@ -19,6 +19,7 @@
         <module>chuandao-spring-boot-starter-redis</module>
         <module>chuandao-spring-boot-starter-web</module>
         <module>chuandao-spring-boot-starter-security</module>
+        <module>chuandao-spring-boot-starter-biz-operatelog</module>
     </modules>
 
 

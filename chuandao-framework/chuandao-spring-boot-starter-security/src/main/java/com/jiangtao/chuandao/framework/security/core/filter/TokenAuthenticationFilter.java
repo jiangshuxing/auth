@@ -6,12 +6,14 @@ import cn.hutool.core.util.StrUtil;
 import com.jiangtao.chuandao.framework.common.exception.ServiceException;
 import com.jiangtao.chuandao.framework.common.pojo.CommonResult;
 import com.jiangtao.chuandao.framework.common.util.servlet.ServletUtils;
+import com.jiangtao.chuandao.framework.security.config.SecurityProperties;
 import com.jiangtao.chuandao.framework.security.core.LoginUser;
 import com.jiangtao.chuandao.framework.security.core.util.SecurityFrameworkUtils;
 import com.jiangtao.chuandao.framework.web.core.handler.GlobalExceptionHandler;
 import com.jiangtao.chuandao.framework.web.core.util.WebFrameworkUtils;
+import com.jiangtao.chuandao.module.system.api.oauth2.OAuth2TokenApi;
+import com.jiangtao.chuandao.module.system.api.oauth2.dto.OAuth2AccessTokenCheckRespDTO;
 import lombok.RequiredArgsConstructor;
-import org.springframework.boot.autoconfigure.security.SecurityProperties;
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.web.filter.OncePerRequestFilter;
 

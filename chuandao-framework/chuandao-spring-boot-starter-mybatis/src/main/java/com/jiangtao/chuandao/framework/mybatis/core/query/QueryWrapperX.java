@@ -1,10 +1,10 @@
 package com.jiangtao.chuandao.framework.mybatis.core.query;
 
 import cn.hutool.core.lang.Assert;
-import cn.iocoder.yudao.framework.mybatis.core.enums.SqlConstants;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.toolkit.ArrayUtils;
 import com.baomidou.mybatisplus.core.toolkit.CollectionUtils;
+import com.jiangtao.chuandao.framework.mybatis.core.enums.SqlConstants;
 import org.springframework.util.StringUtils;
 
 import java.util.Collection;

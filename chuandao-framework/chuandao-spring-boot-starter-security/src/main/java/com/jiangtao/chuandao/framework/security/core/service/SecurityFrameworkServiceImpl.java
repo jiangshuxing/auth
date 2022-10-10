@@ -1,14 +1,15 @@
 package com.jiangtao.chuandao.framework.security.core.service;
 
 import cn.hutool.core.collection.CollUtil;
-import cn.iocoder.yudao.framework.security.core.LoginUser;
-import cn.iocoder.yudao.framework.security.core.util.SecurityFrameworkUtils;
-import cn.iocoder.yudao.module.system.api.permission.PermissionApi;
+import com.jiangtao.chuandao.framework.security.core.LoginUser;
+import com.jiangtao.chuandao.framework.security.core.util.SecurityFrameworkUtils;
+import com.jiangtao.chuandao.module.system.api.permission.PermissionApi;
 import lombok.AllArgsConstructor;
 
 import java.util.Arrays;
 
-import static cn.iocoder.yudao.framework.security.core.util.SecurityFrameworkUtils.getLoginUserId;
+import static com.jiangtao.chuandao.framework.security.core.util.SecurityFrameworkUtils.getLoginUserId;
+
 
 /**
  * 默认的 {@link SecurityFrameworkService} 实现类

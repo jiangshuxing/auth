@@ -55,11 +55,11 @@
        </dependency>
 
        <!-- 业务组件 -->
-<!--       <dependency>-->
-<!--           <groupId>cn.iocoder.boot</groupId>-->
-<!--           <artifactId>yudao-module-infra-api</artifactId> &lt;!&ndash; 需要使用它，进行操作日志的记录 &ndash;&gt;-->
-<!--           <version>${revision}</version>-->
-<!--       </dependency>-->
+       <dependency>
+           <groupId>com.jiangtao</groupId>
+           <artifactId>chuandao-module-infra-api</artifactId> <!-- 需要使用它，进行操作日志的记录 -->
+           <version>${revision}</version>
+       </dependency>
 
        <!-- 服务保障相关 -->
        <dependency>

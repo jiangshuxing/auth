@@ -1,12 +1,12 @@
 package com.jiangtao.chuandao.framework.mybatis.core.util;
 
 import cn.hutool.core.collection.CollectionUtil;
-import cn.iocoder.yudao.framework.common.pojo.PageParam;
-import cn.iocoder.yudao.framework.common.pojo.SortingField;
 import com.baomidou.mybatisplus.core.metadata.OrderItem;
 import com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor;
 import com.baomidou.mybatisplus.extension.plugins.inner.InnerInterceptor;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.jiangtao.chuandao.framework.common.pojo.PageParam;
+import com.jiangtao.chuandao.framework.common.pojo.SortingField;
 import net.sf.jsqlparser.expression.Alias;
 import net.sf.jsqlparser.schema.Column;
 import net.sf.jsqlparser.schema.Table;

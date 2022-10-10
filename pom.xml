@@ -12,6 +12,7 @@
         <module>chuandao-framework</module>
         <module>chuandao-server</module>
         <module>chuandao-module-system</module>
+        <module>chuandao-module-infra</module>
 
 
     </modules>

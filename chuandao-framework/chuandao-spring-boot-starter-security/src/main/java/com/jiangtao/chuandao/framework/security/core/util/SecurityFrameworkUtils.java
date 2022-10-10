@@ -1,7 +1,7 @@
 package com.jiangtao.chuandao.framework.security.core.util;
 
-import cn.iocoder.yudao.framework.security.core.LoginUser;
-import cn.iocoder.yudao.framework.web.core.util.WebFrameworkUtils;
+import com.jiangtao.chuandao.framework.security.core.LoginUser;
+import com.jiangtao.chuandao.framework.web.core.util.WebFrameworkUtils;
 import org.springframework.lang.Nullable;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
