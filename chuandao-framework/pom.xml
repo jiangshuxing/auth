@@ -20,6 +20,8 @@
         <module>chuandao-spring-boot-starter-web</module>
         <module>chuandao-spring-boot-starter-security</module>
         <module>chuandao-spring-boot-starter-biz-operatelog</module>
+        <module>chuandao-spring-boot-starter-biz-dict</module>
+        <module>chuandao-spring-boot-starter-biz-tenant</module>
     </modules>
 
 

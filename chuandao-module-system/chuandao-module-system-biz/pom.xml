@@ -40,17 +40,18 @@
             <version>3.5.2</version>
             <scope>compile</scope>
         </dependency>
-        <!--        <dependency>-->
-<!--            <groupId>cn.iocoder.boot</groupId>-->
-<!--            <artifactId>yudao-module-infra-api</artifactId>-->
-<!--            <version>${revision}</version>-->
-<!--        </dependency>-->
+                <dependency>
+            <groupId>com.jiangtao</groupId>
+            <artifactId>chuandao-module-infra-api</artifactId>
+            <version>${revision}</version>
+        </dependency>
 
-<!--        &lt;!&ndash; 业务组件 &ndash;&gt;-->
-<!--        <dependency>-->
-<!--            <groupId>cn.iocoder.boot</groupId>-->
-<!--            <artifactId>yudao-spring-boot-starter-biz-operatelog</artifactId>-->
-<!--        </dependency>-->
+        <!-- 业务组件 -->
+        <dependency>
+            <groupId>com.jiangtao</groupId>
+            <artifactId>chuandao-spring-boot-starter-biz-operatelog</artifactId>
+            <version>${revision}</version>
+        </dependency>
 <!--        <dependency>-->
 <!--            <groupId>cn.iocoder.boot</groupId>-->
 <!--            <artifactId>yudao-spring-boot-starter-biz-sms</artifactId>-->
@@ -67,27 +68,31 @@
 <!--            <groupId>cn.iocoder.boot</groupId>-->
 <!--            <artifactId>yudao-spring-boot-starter-biz-social</artifactId>-->
 <!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>cn.iocoder.boot</groupId>-->
-<!--            <artifactId>yudao-spring-boot-starter-biz-tenant</artifactId>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>com.jiangtao</groupId>
+            <artifactId>chuandao-spring-boot-starter-biz-tenant</artifactId>
+            <version>${revision}</version>
+        </dependency>
 
 <!--        &lt;!&ndash; Web 相关 &ndash;&gt;-->
-<!--        <dependency>-->
-<!--            <groupId>cn.iocoder.boot</groupId>-->
-<!--            <artifactId>yudao-spring-boot-starter-security</artifactId>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>com.jiangtao</groupId>
+            <artifactId>chuandao-spring-boot-starter-security</artifactId>
+            <version>${revision}</version>
+        </dependency>
 
 <!--        &lt;!&ndash; DB 相关 &ndash;&gt;-->
-<!--        <dependency>-->
-<!--            <groupId>cn.iocoder.boot</groupId>-->
-<!--            <artifactId>yudao-spring-boot-starter-mybatis</artifactId>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>com.jiangtao</groupId>
+            <artifactId>chuandao-spring-boot-starter-mybatis</artifactId>
+            <version>${revision}</version>
+        </dependency>
 
-<!--        <dependency>-->
-<!--            <groupId>cn.iocoder.boot</groupId>-->
-<!--            <artifactId>yudao-spring-boot-starter-redis</artifactId>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>com.jiangtao</groupId>
+            <artifactId>chuandao-spring-boot-starter-redis</artifactId>
+            <version>${revision}</version>
+        </dependency>
 
 <!--        &lt;!&ndash; Job 定时任务相关 &ndash;&gt;-->
 <!--        <dependency>-->

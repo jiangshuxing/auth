@@ -1,6 +1,5 @@
 package com.jiangtao.chuandao.module.system.enums.oauth2;
 
-
 import cn.hutool.core.util.ArrayUtil;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

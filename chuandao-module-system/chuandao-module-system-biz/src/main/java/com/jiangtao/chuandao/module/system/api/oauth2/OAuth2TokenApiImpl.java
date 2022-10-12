@@ -3,6 +3,7 @@ package com.jiangtao.chuandao.module.system.api.oauth2;
 import com.jiangtao.chuandao.module.system.api.oauth2.dto.OAuth2AccessTokenCheckRespDTO;
 import com.jiangtao.chuandao.module.system.api.oauth2.dto.OAuth2AccessTokenCreateReqDTO;
 import com.jiangtao.chuandao.module.system.api.oauth2.dto.OAuth2AccessTokenRespDTO;
+import com.jiangtao.chuandao.module.system.dal.dataobject.oauth2.OAuth2AccessTokenDO;
 import com.jiangtao.chuandao.module.system.service.oauth2.OAuth2TokenService;
 import org.springframework.stereotype.Service;
 

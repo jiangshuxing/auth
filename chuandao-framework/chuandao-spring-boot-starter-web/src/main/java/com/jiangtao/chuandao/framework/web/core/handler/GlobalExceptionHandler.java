@@ -4,6 +4,7 @@ import cn.hutool.core.exceptions.ExceptionUtil;
 import cn.hutool.core.map.MapUtil;
 import cn.hutool.extra.servlet.ServletUtil;
 import com.jiangtao.chuandao.framework.apilog.core.service.ApiErrorLog;
+import com.jiangtao.chuandao.framework.apilog.core.service.ApiErrorLogFrameworkService;
 import com.jiangtao.chuandao.framework.common.exception.ServiceException;
 import com.jiangtao.chuandao.framework.common.pojo.CommonResult;
 import com.jiangtao.chuandao.framework.common.util.json.JsonUtils;
@@ -48,7 +49,7 @@ public class GlobalExceptionHandler {
 
     private final String applicationName;
 
-//    private final ApiErrorLogFrameworkService apiErrorLogFrameworkService;
+    private final ApiErrorLogFrameworkService apiErrorLogFrameworkService;
 
     /**
      * 处理所有异常，主要是提供给 Filter 使用
