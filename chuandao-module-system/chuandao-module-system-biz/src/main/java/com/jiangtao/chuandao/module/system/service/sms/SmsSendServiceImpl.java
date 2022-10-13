@@ -22,7 +22,7 @@ import java.util.stream.Collectors;
 /**
  * 短信发送 Service 发送的实现
  *
- * @author 芋道源码
+ * @author 传道源码
  */
 @Service
 public class SmsSendServiceImpl implements SmsSendService {
