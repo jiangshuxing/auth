@@ -1,6 +1,6 @@
 package com.jiangtao.chuandao.module.system.enums.errorcode;
 
-import cn.iocoder.yudao.framework.common.core.IntArrayValuable;
+import com.jiangtao.chuandao.framework.common.core.IntArrayValuable;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 

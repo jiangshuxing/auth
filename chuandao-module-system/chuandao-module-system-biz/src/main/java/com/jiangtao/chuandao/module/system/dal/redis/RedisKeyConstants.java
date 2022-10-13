@@ -1,11 +1,13 @@
 package com.jiangtao.chuandao.module.system.dal.redis;
 
-import cn.iocoder.yudao.framework.redis.core.RedisKeyDefine;
-import cn.iocoder.yudao.module.system.dal.dataobject.oauth2.OAuth2AccessTokenDO;
+
+import com.jiangtao.chuandao.framework.redis.core.RedisKeyDefine;
+import com.jiangtao.chuandao.module.system.dal.dataobject.oauth2.OAuth2AccessTokenDO;
 
 import java.time.Duration;
 
-import static cn.iocoder.yudao.framework.redis.core.RedisKeyDefine.KeyTypeEnum.STRING;
+import static com.jiangtao.chuandao.framework.redis.core.RedisKeyDefine.KeyTypeEnum.STRING;
+
 
 /**
  * System Redis Key 枚举类

@@ -1,12 +1,12 @@
 package com.jiangtao.chuandao.module.system.dal.dataobject.sms;
 
-import cn.iocoder.yudao.framework.common.enums.CommonStatusEnum;
-import cn.iocoder.yudao.framework.mybatis.core.dataobject.BaseDO;
-import cn.iocoder.yudao.module.system.enums.sms.SmsTemplateTypeEnum;
 import com.baomidou.mybatisplus.annotation.KeySequence;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler;
+import com.jiangtao.chuandao.framework.common.enums.CommonStatusEnum;
+import com.jiangtao.chuandao.framework.mybatis.core.dataobject.BaseDO;
+import com.jiangtao.chuandao.module.system.enums.sms.SmsTemplateTypeEnum;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;

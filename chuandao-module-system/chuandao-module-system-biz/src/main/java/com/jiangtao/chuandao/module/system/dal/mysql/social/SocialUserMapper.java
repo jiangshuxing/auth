@@ -1,8 +1,8 @@
 package com.jiangtao.chuandao.module.system.dal.mysql.social;
 
-import cn.iocoder.yudao.framework.mybatis.core.mapper.BaseMapperX;
-import cn.iocoder.yudao.module.system.dal.dataobject.social.SocialUserDO;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+import com.jiangtao.chuandao.framework.mybatis.core.mapper.BaseMapperX;
+import com.jiangtao.chuandao.module.system.dal.dataobject.social.SocialUserDO;
 import org.apache.ibatis.annotations.Mapper;
 
 @Mapper

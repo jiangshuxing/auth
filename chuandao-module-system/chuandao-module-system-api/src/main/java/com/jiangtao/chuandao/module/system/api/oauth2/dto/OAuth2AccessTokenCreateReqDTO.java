@@ -1,7 +1,7 @@
 package com.jiangtao.chuandao.module.system.api.oauth2.dto;
 
-import cn.iocoder.yudao.framework.common.enums.UserTypeEnum;
-import cn.iocoder.yudao.framework.common.validation.InEnum;
+import com.jiangtao.chuandao.framework.common.enums.UserTypeEnum;
+import com.jiangtao.chuandao.framework.common.validation.InEnum;
 import lombok.Data;
 
 import javax.validation.constraints.NotNull;

@@ -1,6 +1,7 @@
 package com.jiangtao.chuandao.module.system.api.sms;
 
-import cn.iocoder.yudao.module.system.api.sms.dto.send.SmsSendSingleToUserReqDTO;
+
+import com.jiangtao.chuandao.module.system.api.sms.dto.send.SmsSendSingleToUserReqDTO;
 
 import javax.validation.Valid;
 

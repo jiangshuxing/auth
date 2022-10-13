@@ -1,13 +1,13 @@
 package com.jiangtao.chuandao.module.system.dal.dataobject.logger;
 
-import cn.iocoder.yudao.framework.common.enums.UserTypeEnum;
-import cn.iocoder.yudao.framework.common.pojo.CommonResult;
-import cn.iocoder.yudao.framework.mybatis.core.dataobject.BaseDO;
 import com.baomidou.mybatisplus.annotation.KeySequence;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler;
+import com.jiangtao.chuandao.framework.common.enums.UserTypeEnum;
+import com.jiangtao.chuandao.framework.common.pojo.CommonResult;
+import com.jiangtao.chuandao.framework.mybatis.core.dataobject.BaseDO;
 import com.jiangtao.chuandao.framework.operatelog.core.enums.OperateTypeEnum;
 import lombok.Data;
 import lombok.EqualsAndHashCode;

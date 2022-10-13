@@ -1,11 +1,11 @@
 package com.jiangtao.chuandao.module.system.dal.dataobject.tenant;
 
-import cn.iocoder.yudao.framework.common.enums.CommonStatusEnum;
-import cn.iocoder.yudao.framework.mybatis.core.dataobject.BaseDO;
-import cn.iocoder.yudao.framework.mybatis.core.type.JsonLongSetTypeHandler;
 import com.baomidou.mybatisplus.annotation.KeySequence;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.jiangtao.chuandao.framework.common.enums.CommonStatusEnum;
+import com.jiangtao.chuandao.framework.mybatis.core.dataobject.BaseDO;
+import com.jiangtao.chuandao.framework.mybatis.core.type.JsonLongSetTypeHandler;
 import lombok.*;
 
 import java.util.Set;

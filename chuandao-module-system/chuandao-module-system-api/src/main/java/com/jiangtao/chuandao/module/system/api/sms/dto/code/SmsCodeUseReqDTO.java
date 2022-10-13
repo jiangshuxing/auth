@@ -1,8 +1,8 @@
 package com.jiangtao.chuandao.module.system.api.sms.dto.code;
 
-import cn.iocoder.yudao.framework.common.validation.InEnum;
-import cn.iocoder.yudao.framework.common.validation.Mobile;
-import cn.iocoder.yudao.module.system.enums.sms.SmsSceneEnum;
+import com.jiangtao.chuandao.framework.common.validation.InEnum;
+import com.jiangtao.chuandao.framework.common.validation.Mobile;
+import com.jiangtao.chuandao.module.system.enums.sms.SmsSceneEnum;
 import lombok.Data;
 
 import javax.validation.constraints.NotEmpty;

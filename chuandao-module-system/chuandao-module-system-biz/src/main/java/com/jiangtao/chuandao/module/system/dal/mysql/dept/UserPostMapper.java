@@ -1,9 +1,9 @@
 package com.jiangtao.chuandao.module.system.dal.mysql.dept;
 
-import cn.iocoder.yudao.framework.mybatis.core.mapper.BaseMapperX;
-import cn.iocoder.yudao.framework.mybatis.core.query.LambdaQueryWrapperX;
-import cn.iocoder.yudao.module.system.dal.dataobject.dept.UserPostDO;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
+import com.jiangtao.chuandao.framework.mybatis.core.mapper.BaseMapperX;
+import com.jiangtao.chuandao.framework.mybatis.core.query.LambdaQueryWrapperX;
+import com.jiangtao.chuandao.module.system.dal.dataobject.dept.UserPostDO;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.Collection;

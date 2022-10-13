@@ -1,9 +1,10 @@
 package com.jiangtao.chuandao.module.system.api.social;
 
-import cn.iocoder.yudao.framework.common.exception.ServiceException;
-import cn.iocoder.yudao.module.system.api.social.dto.SocialUserBindReqDTO;
-import cn.iocoder.yudao.module.system.api.social.dto.SocialUserUnbindReqDTO;
-import cn.iocoder.yudao.module.system.enums.social.SocialTypeEnum;
+
+import com.jiangtao.chuandao.framework.common.exception.ServiceException;
+import com.jiangtao.chuandao.module.system.api.social.dto.SocialUserBindReqDTO;
+import com.jiangtao.chuandao.module.system.api.social.dto.SocialUserUnbindReqDTO;
+import com.jiangtao.chuandao.module.system.enums.social.SocialTypeEnum;
 
 import javax.validation.Valid;
 

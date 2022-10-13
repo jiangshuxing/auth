@@ -1,10 +1,10 @@
 package com.jiangtao.chuandao.module.system.dal.mysql.notice;
 
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.mybatis.core.mapper.BaseMapperX;
-import cn.iocoder.yudao.framework.mybatis.core.query.LambdaQueryWrapperX;
-import cn.iocoder.yudao.module.system.controller.admin.notice.vo.NoticePageReqVO;
-import cn.iocoder.yudao.module.system.dal.dataobject.notice.NoticeDO;
+import com.jiangtao.chuandao.framework.common.pojo.PageResult;
+import com.jiangtao.chuandao.framework.mybatis.core.mapper.BaseMapperX;
+import com.jiangtao.chuandao.framework.mybatis.core.query.LambdaQueryWrapperX;
+import com.jiangtao.chuandao.module.system.controller.admin.notice.vo.NoticePageReqVO;
+import com.jiangtao.chuandao.module.system.dal.dataobject.notice.NoticeDO;
 import org.apache.ibatis.annotations.Mapper;
 
 @Mapper

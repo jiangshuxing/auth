@@ -1,7 +1,7 @@
 package com.jiangtao.chuandao.module.system.api.errorcode;
 
-import cn.iocoder.yudao.module.system.api.errorcode.dto.ErrorCodeAutoGenerateReqDTO;
-import cn.iocoder.yudao.module.system.api.errorcode.dto.ErrorCodeRespDTO;
+import com.jiangtao.chuandao.module.system.api.errorcode.dto.ErrorCodeAutoGenerateReqDTO;
+import com.jiangtao.chuandao.module.system.api.errorcode.dto.ErrorCodeRespDTO;
 
 import javax.validation.Valid;
 import java.util.Date;

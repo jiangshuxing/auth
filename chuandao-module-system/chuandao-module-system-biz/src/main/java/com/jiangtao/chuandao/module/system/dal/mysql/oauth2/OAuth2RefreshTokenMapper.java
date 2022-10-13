@@ -1,8 +1,8 @@
 package com.jiangtao.chuandao.module.system.dal.mysql.oauth2;
 
-import cn.iocoder.yudao.framework.mybatis.core.mapper.BaseMapperX;
-import cn.iocoder.yudao.framework.mybatis.core.query.LambdaQueryWrapperX;
-import cn.iocoder.yudao.module.system.dal.dataobject.oauth2.OAuth2RefreshTokenDO;
+import com.jiangtao.chuandao.framework.mybatis.core.mapper.BaseMapperX;
+import com.jiangtao.chuandao.framework.mybatis.core.query.LambdaQueryWrapperX;
+import com.jiangtao.chuandao.module.system.dal.dataobject.oauth2.OAuth2RefreshTokenDO;
 import org.apache.ibatis.annotations.Mapper;
 
 @Mapper

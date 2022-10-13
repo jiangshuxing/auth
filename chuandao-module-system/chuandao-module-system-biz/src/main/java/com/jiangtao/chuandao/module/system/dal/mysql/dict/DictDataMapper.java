@@ -1,12 +1,12 @@
 package com.jiangtao.chuandao.module.system.dal.mysql.dict;
 
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.mybatis.core.mapper.BaseMapperX;
-import cn.iocoder.yudao.framework.mybatis.core.query.LambdaQueryWrapperX;
-import cn.iocoder.yudao.module.system.controller.admin.dict.vo.data.DictDataExportReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.dict.vo.data.DictDataPageReqVO;
-import cn.iocoder.yudao.module.system.dal.dataobject.dict.DictDataDO;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+import com.jiangtao.chuandao.framework.common.pojo.PageResult;
+import com.jiangtao.chuandao.framework.mybatis.core.mapper.BaseMapperX;
+import com.jiangtao.chuandao.framework.mybatis.core.query.LambdaQueryWrapperX;
+import com.jiangtao.chuandao.module.system.controller.admin.dict.vo.data.DictDataExportReqVO;
+import com.jiangtao.chuandao.module.system.controller.admin.dict.vo.data.DictDataPageReqVO;
+import com.jiangtao.chuandao.module.system.dal.dataobject.dict.DictDataDO;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.Arrays;

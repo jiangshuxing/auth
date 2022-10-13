@@ -1,11 +1,10 @@
 package com.jiangtao.chuandao.module.system.dal.dataobject.dept;
 
-import cn.iocoder.yudao.framework.common.enums.CommonStatusEnum;
-import cn.iocoder.yudao.framework.mybatis.core.dataobject.BaseDO;
-import cn.iocoder.yudao.module.system.dal.dataobject.user.AdminUserDO;
 import com.baomidou.mybatisplus.annotation.KeySequence;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.jiangtao.chuandao.framework.mybatis.core.dataobject.BaseDO;
+import com.jiangtao.chuandao.module.system.dal.dataobject.user.AdminUserDO;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 

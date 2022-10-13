@@ -1,10 +1,10 @@
 package com.jiangtao.chuandao.module.system.dal.mysql.oauth2;
 
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.mybatis.core.mapper.BaseMapperX;
-import cn.iocoder.yudao.framework.mybatis.core.query.LambdaQueryWrapperX;
-import cn.iocoder.yudao.module.system.controller.admin.oauth2.vo.token.OAuth2AccessTokenPageReqVO;
-import cn.iocoder.yudao.module.system.dal.dataobject.oauth2.OAuth2AccessTokenDO;
+import com.jiangtao.chuandao.framework.common.pojo.PageResult;
+import com.jiangtao.chuandao.framework.mybatis.core.mapper.BaseMapperX;
+import com.jiangtao.chuandao.framework.mybatis.core.query.LambdaQueryWrapperX;
+import com.jiangtao.chuandao.module.system.controller.admin.oauth2.vo.token.OAuth2AccessTokenPageReqVO;
+import com.jiangtao.chuandao.module.system.dal.dataobject.oauth2.OAuth2AccessTokenDO;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.Date;

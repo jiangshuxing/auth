@@ -1,7 +1,8 @@
 package com.jiangtao.chuandao.module.system.service.auth;
 
-import cn.iocoder.yudao.module.system.controller.admin.auth.vo.*;
-import cn.iocoder.yudao.module.system.dal.dataobject.user.AdminUserDO;
+
+import com.jiangtao.chuandao.module.system.controller.admin.auth.vo.*;
+import com.jiangtao.chuandao.module.system.dal.dataobject.user.AdminUserDO;
 
 import javax.validation.Valid;
 

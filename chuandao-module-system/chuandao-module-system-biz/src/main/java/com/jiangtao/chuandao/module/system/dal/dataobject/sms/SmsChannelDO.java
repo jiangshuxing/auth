@@ -1,10 +1,9 @@
 package com.jiangtao.chuandao.module.system.dal.dataobject.sms;
 
-import cn.iocoder.yudao.framework.common.enums.CommonStatusEnum;
-import cn.iocoder.yudao.framework.mybatis.core.dataobject.BaseDO;
-import cn.iocoder.yudao.framework.sms.core.enums.SmsChannelEnum;
 import com.baomidou.mybatisplus.annotation.KeySequence;
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.jiangtao.chuandao.framework.common.enums.CommonStatusEnum;
+import com.jiangtao.chuandao.framework.mybatis.core.dataobject.BaseDO;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;

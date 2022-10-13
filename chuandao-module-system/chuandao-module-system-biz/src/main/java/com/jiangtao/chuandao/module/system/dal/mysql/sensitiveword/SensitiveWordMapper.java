@@ -1,11 +1,11 @@
 package com.jiangtao.chuandao.module.system.dal.mysql.sensitiveword;
 
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.mybatis.core.mapper.BaseMapperX;
-import cn.iocoder.yudao.framework.mybatis.core.query.LambdaQueryWrapperX;
-import cn.iocoder.yudao.module.system.controller.admin.sensitiveword.vo.SensitiveWordExportReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.sensitiveword.vo.SensitiveWordPageReqVO;
-import cn.iocoder.yudao.module.system.dal.dataobject.sensitiveword.SensitiveWordDO;
+import com.jiangtao.chuandao.framework.common.pojo.PageResult;
+import com.jiangtao.chuandao.framework.mybatis.core.mapper.BaseMapperX;
+import com.jiangtao.chuandao.framework.mybatis.core.query.LambdaQueryWrapperX;
+import com.jiangtao.chuandao.module.system.controller.admin.sensitiveword.vo.SensitiveWordExportReqVO;
+import com.jiangtao.chuandao.module.system.controller.admin.sensitiveword.vo.SensitiveWordPageReqVO;
+import com.jiangtao.chuandao.module.system.dal.dataobject.sensitiveword.SensitiveWordDO;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 

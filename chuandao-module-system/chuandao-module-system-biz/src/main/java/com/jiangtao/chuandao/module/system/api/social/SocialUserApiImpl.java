@@ -1,8 +1,8 @@
 package com.jiangtao.chuandao.module.system.api.social;
 
-import cn.iocoder.yudao.module.system.api.social.dto.SocialUserBindReqDTO;
-import cn.iocoder.yudao.module.system.api.social.dto.SocialUserUnbindReqDTO;
-import cn.iocoder.yudao.module.system.service.social.SocialUserService;
+import com.jiangtao.chuandao.module.system.api.social.dto.SocialUserBindReqDTO;
+import com.jiangtao.chuandao.module.system.api.social.dto.SocialUserUnbindReqDTO;
+import com.jiangtao.chuandao.module.system.service.social.SocialUserService;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 

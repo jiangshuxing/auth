@@ -1,6 +1,6 @@
 package com.jiangtao.chuandao.module.system.enums.permission;
 
-import cn.iocoder.yudao.framework.common.util.object.ObjectUtils;
+import com.jiangtao.chuandao.framework.common.util.object.ObjectUtils;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 

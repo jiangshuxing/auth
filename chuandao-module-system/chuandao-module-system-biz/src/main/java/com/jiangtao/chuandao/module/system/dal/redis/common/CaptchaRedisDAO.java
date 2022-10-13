@@ -6,7 +6,8 @@ import org.springframework.stereotype.Repository;
 import javax.annotation.Resource;
 import java.time.Duration;
 
-import static cn.iocoder.yudao.module.system.dal.redis.RedisKeyConstants.CAPTCHA_CODE;
+import static com.jiangtao.chuandao.module.system.dal.redis.RedisKeyConstants.CAPTCHA_CODE;
+
 
 /**
  * 验证码的 Redis DAO

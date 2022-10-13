@@ -1,6 +1,6 @@
 package com.jiangtao.chuandao.module.system.api.user.dto;
 
-import cn.iocoder.yudao.framework.common.enums.CommonStatusEnum;
+import com.jiangtao.chuandao.framework.common.enums.CommonStatusEnum;
 import lombok.Data;
 
 import java.util.Set;

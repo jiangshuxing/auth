@@ -1,8 +1,8 @@
 package com.jiangtao.chuandao.module.system.dal.mysql.sms;
 
-import cn.iocoder.yudao.framework.mybatis.core.mapper.BaseMapperX;
-import cn.iocoder.yudao.framework.mybatis.core.query.QueryWrapperX;
-import cn.iocoder.yudao.module.system.dal.dataobject.sms.SmsCodeDO;
+import com.jiangtao.chuandao.framework.mybatis.core.mapper.BaseMapperX;
+import com.jiangtao.chuandao.framework.mybatis.core.query.QueryWrapperX;
+import com.jiangtao.chuandao.module.system.dal.dataobject.sms.SmsCodeDO;
 import org.apache.ibatis.annotations.Mapper;
 
 @Mapper

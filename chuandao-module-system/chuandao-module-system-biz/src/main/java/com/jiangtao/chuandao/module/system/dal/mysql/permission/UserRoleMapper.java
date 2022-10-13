@@ -1,8 +1,8 @@
 package com.jiangtao.chuandao.module.system.dal.mysql.permission;
 
-import cn.iocoder.yudao.framework.mybatis.core.mapper.BaseMapperX;
-import cn.iocoder.yudao.module.system.dal.dataobject.permission.UserRoleDO;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.jiangtao.chuandao.framework.mybatis.core.mapper.BaseMapperX;
+import com.jiangtao.chuandao.module.system.dal.dataobject.permission.UserRoleDO;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 

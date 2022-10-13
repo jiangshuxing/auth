@@ -1,9 +1,9 @@
 package com.jiangtao.chuandao.module.system.dal.dataobject.permission;
 
-import cn.iocoder.yudao.framework.tenant.core.db.TenantBaseDO;
 import com.baomidou.mybatisplus.annotation.KeySequence;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.jiangtao.chuandao.framework.tenant.core.db.TenantBaseDO;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 

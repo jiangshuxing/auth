@@ -1,10 +1,10 @@
 package com.jiangtao.chuandao.module.system.dal.mysql.dept;
 
-import cn.iocoder.yudao.framework.mybatis.core.mapper.BaseMapperX;
-import cn.iocoder.yudao.framework.mybatis.core.query.LambdaQueryWrapperX;
-import cn.iocoder.yudao.module.system.controller.admin.dept.vo.dept.DeptListReqVO;
-import cn.iocoder.yudao.module.system.dal.dataobject.dept.DeptDO;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+import com.jiangtao.chuandao.framework.mybatis.core.mapper.BaseMapperX;
+import com.jiangtao.chuandao.framework.mybatis.core.query.LambdaQueryWrapperX;
+import com.jiangtao.chuandao.module.system.controller.admin.dept.vo.dept.DeptListReqVO;
+import com.jiangtao.chuandao.module.system.dal.dataobject.dept.DeptDO;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 

@@ -1,7 +1,7 @@
 package com.jiangtao.chuandao.module.system.enums.sms;
 
 import cn.hutool.core.util.ArrayUtil;
-import cn.iocoder.yudao.framework.common.core.IntArrayValuable;
+import com.jiangtao.chuandao.framework.common.core.IntArrayValuable;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 

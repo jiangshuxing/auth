@@ -1,6 +1,7 @@
 package com.jiangtao.chuandao.module.system.service.tenant.handler;
 
-import cn.iocoder.yudao.module.system.dal.dataobject.tenant.TenantDO;
+
+import com.jiangtao.chuandao.module.system.dal.dataobject.tenant.TenantDO;
 
 /**
  * 租户信息处理

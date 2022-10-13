@@ -1,10 +1,10 @@
 package com.jiangtao.chuandao.module.system.dal.dataobject.errorcode;
 
-import cn.iocoder.yudao.framework.mybatis.core.dataobject.BaseDO;
-import cn.iocoder.yudao.module.system.enums.errorcode.ErrorCodeTypeEnum;
 import com.baomidou.mybatisplus.annotation.KeySequence;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.jiangtao.chuandao.framework.mybatis.core.dataobject.BaseDO;
+import com.jiangtao.chuandao.module.system.enums.errorcode.ErrorCodeTypeEnum;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;

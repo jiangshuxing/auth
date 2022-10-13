@@ -1,6 +1,6 @@
 package com.jiangtao.chuandao.module.system.api.sms.dto.send;
 
-import cn.iocoder.yudao.framework.common.validation.Mobile;
+import com.jiangtao.chuandao.framework.common.validation.Mobile;
 import lombok.Data;
 
 import javax.validation.constraints.NotEmpty;

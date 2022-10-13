@@ -1,14 +1,15 @@
 package com.jiangtao.chuandao.module.system.dal.dataobject.user;
 
-import cn.iocoder.yudao.framework.common.enums.CommonStatusEnum;
-import cn.iocoder.yudao.framework.mybatis.core.type.JsonLongSetTypeHandler;
-import cn.iocoder.yudao.framework.tenant.core.db.TenantBaseDO;
-import cn.iocoder.yudao.module.system.enums.common.SexEnum;
 import com.baomidou.mybatisplus.annotation.KeySequence;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.jiangtao.chuandao.framework.common.enums.CommonStatusEnum;
+import com.jiangtao.chuandao.framework.mybatis.core.type.JsonLongSetTypeHandler;
+import com.jiangtao.chuandao.framework.tenant.core.db.TenantBaseDO;
+import com.jiangtao.chuandao.module.system.enums.common.SexEnum;
 import lombok.*;
+import lombok.experimental.Accessors;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import java.util.Date;
@@ -26,6 +27,7 @@ import java.util.Set;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
+@Accessors(chain = true)
 public class AdminUserDO extends TenantBaseDO {
 
     /**

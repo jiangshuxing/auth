@@ -1,6 +1,7 @@
 package com.jiangtao.chuandao.module.system.enums;
 
-import cn.iocoder.yudao.framework.common.exception.ErrorCode;
+
+import com.jiangtao.chuandao.framework.common.exception.ErrorCode;
 
 /**
  * System 错误码枚举类

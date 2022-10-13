@@ -1,11 +1,8 @@
 package com.jiangtao.chuandao.module.system.service.dept;
 
 import cn.hutool.core.collection.CollUtil;
-import cn.iocoder.yudao.framework.common.util.collection.CollectionUtils;
-import cn.iocoder.yudao.module.system.controller.admin.dept.vo.dept.DeptCreateReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.dept.vo.dept.DeptListReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.dept.vo.dept.DeptUpdateReqVO;
-import cn.iocoder.yudao.module.system.dal.dataobject.dept.DeptDO;
+import com.jiangtao.chuandao.framework.common.util.collection.CollectionUtils;
+import com.jiangtao.chuandao.module.system.dal.dataobject.dept.DeptDO;
 
 import java.util.Collection;
 import java.util.Collections;

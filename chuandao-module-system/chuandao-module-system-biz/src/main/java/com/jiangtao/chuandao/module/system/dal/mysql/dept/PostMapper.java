@@ -1,12 +1,13 @@
 package com.jiangtao.chuandao.module.system.dal.mysql.dept;
 
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.mybatis.core.mapper.BaseMapperX;
-import cn.iocoder.yudao.framework.mybatis.core.query.QueryWrapperX;
-import cn.iocoder.yudao.module.system.controller.admin.dept.vo.post.PostExportReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.dept.vo.post.PostPageReqVO;
-import cn.iocoder.yudao.module.system.dal.dataobject.dept.PostDO;
+
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.jiangtao.chuandao.framework.common.pojo.PageResult;
+import com.jiangtao.chuandao.framework.mybatis.core.mapper.*;
+import com.jiangtao.chuandao.framework.mybatis.core.query.QueryWrapperX;
+import com.jiangtao.chuandao.module.system.controller.admin.dept.vo.post.PostExportReqVO;
+import com.jiangtao.chuandao.module.system.controller.admin.dept.vo.post.PostPageReqVO;
+import com.jiangtao.chuandao.module.system.dal.dataobject.dept.PostDO;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.Collection;

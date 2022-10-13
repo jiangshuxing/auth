@@ -1,8 +1,8 @@
 package com.jiangtao.chuandao.module.system.api.social.dto;
 
-import cn.iocoder.yudao.framework.common.enums.UserTypeEnum;
-import cn.iocoder.yudao.framework.common.validation.InEnum;
-import cn.iocoder.yudao.module.system.enums.social.SocialTypeEnum;
+import com.jiangtao.chuandao.framework.common.enums.UserTypeEnum;
+import com.jiangtao.chuandao.framework.common.validation.InEnum;
+import com.jiangtao.chuandao.module.system.enums.social.SocialTypeEnum;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

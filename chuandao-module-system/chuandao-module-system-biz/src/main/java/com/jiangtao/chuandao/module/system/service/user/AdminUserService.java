@@ -1,12 +1,12 @@
 package com.jiangtao.chuandao.module.system.service.user;
 
 import cn.hutool.core.collection.CollUtil;
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.common.util.collection.CollectionUtils;
-import cn.iocoder.yudao.module.system.controller.admin.user.vo.profile.UserProfileUpdatePasswordReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.user.vo.profile.UserProfileUpdateReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.user.vo.user.*;
-import cn.iocoder.yudao.module.system.dal.dataobject.user.AdminUserDO;
+import com.jiangtao.chuandao.framework.common.pojo.PageResult;
+import com.jiangtao.chuandao.framework.common.util.collection.CollectionUtils;
+import com.jiangtao.chuandao.module.system.controller.admin.user.vo.profile.UserProfileUpdatePasswordReqVO;
+import com.jiangtao.chuandao.module.system.controller.admin.user.vo.profile.UserProfileUpdateReqVO;
+import com.jiangtao.chuandao.module.system.controller.admin.user.vo.user.*;
+import com.jiangtao.chuandao.module.system.dal.dataobject.user.AdminUserDO;
 
 import javax.validation.Valid;
 import java.io.InputStream;

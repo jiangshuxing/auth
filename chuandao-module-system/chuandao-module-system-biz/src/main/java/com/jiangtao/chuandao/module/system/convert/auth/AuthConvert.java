@@ -1,15 +1,14 @@
 package com.jiangtao.chuandao.module.system.convert.auth;
 
-import cn.iocoder.yudao.framework.common.util.collection.CollectionUtils;
-import cn.iocoder.yudao.module.system.api.sms.dto.code.SmsCodeSendReqDTO;
-import cn.iocoder.yudao.module.system.api.sms.dto.code.SmsCodeUseReqDTO;
-import cn.iocoder.yudao.module.system.api.social.dto.SocialUserBindReqDTO;
-import cn.iocoder.yudao.module.system.controller.admin.auth.vo.*;
-import cn.iocoder.yudao.module.system.dal.dataobject.oauth2.OAuth2AccessTokenDO;
-import cn.iocoder.yudao.module.system.dal.dataobject.permission.MenuDO;
-import cn.iocoder.yudao.module.system.dal.dataobject.permission.RoleDO;
-import cn.iocoder.yudao.module.system.dal.dataobject.user.AdminUserDO;
-import cn.iocoder.yudao.module.system.enums.permission.MenuIdEnum;
+import com.jiangtao.chuandao.framework.common.util.collection.CollectionUtils;
+import com.jiangtao.chuandao.module.system.api.sms.dto.code.SmsCodeSendReqDTO;
+import com.jiangtao.chuandao.module.system.api.sms.dto.code.SmsCodeUseReqDTO;
+import com.jiangtao.chuandao.module.system.api.social.dto.SocialUserBindReqDTO;
+import com.jiangtao.chuandao.module.system.dal.dataobject.oauth2.OAuth2AccessTokenDO;
+import com.jiangtao.chuandao.module.system.dal.dataobject.permission.MenuDO;
+import com.jiangtao.chuandao.module.system.dal.dataobject.permission.RoleDO;
+import com.jiangtao.chuandao.module.system.dal.dataobject.user.AdminUserDO;
+import com.jiangtao.chuandao.module.system.enums.permission.MenuIdEnum;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 import org.slf4j.LoggerFactory;

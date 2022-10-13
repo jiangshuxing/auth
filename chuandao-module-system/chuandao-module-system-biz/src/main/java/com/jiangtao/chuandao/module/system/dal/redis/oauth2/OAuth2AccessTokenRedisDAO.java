@@ -1,8 +1,8 @@
 package com.jiangtao.chuandao.module.system.dal.redis.oauth2;
 
-import cn.iocoder.yudao.framework.common.util.collection.CollectionUtils;
-import cn.iocoder.yudao.framework.common.util.json.JsonUtils;
-import cn.iocoder.yudao.module.system.dal.dataobject.oauth2.OAuth2AccessTokenDO;
+import com.jiangtao.chuandao.framework.common.util.collection.CollectionUtils;
+import com.jiangtao.chuandao.framework.common.util.json.JsonUtils;
+import com.jiangtao.chuandao.module.system.dal.dataobject.oauth2.OAuth2AccessTokenDO;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Repository;
 
@@ -11,7 +11,8 @@ import java.util.Collection;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import static cn.iocoder.yudao.module.system.dal.redis.RedisKeyConstants.OAUTH2_ACCESS_TOKEN;
+import static com.jiangtao.chuandao.module.system.dal.redis.RedisKeyConstants.OAUTH2_ACCESS_TOKEN;
+
 
 /**
  * {@link OAuth2AccessTokenDO} 的 RedisDAO
