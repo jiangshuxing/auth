@@ -3,10 +3,10 @@ package com.jiangtao.chuandao.module.system.service.common;
 import cn.hutool.captcha.CaptchaUtil;
 import cn.hutool.captcha.CircleCaptcha;
 import cn.hutool.core.util.IdUtil;
-import cn.iocoder.yudao.module.system.controller.admin.common.vo.CaptchaImageRespVO;
-import cn.iocoder.yudao.module.system.convert.common.CaptchaConvert;
-import cn.iocoder.yudao.module.system.dal.redis.common.CaptchaRedisDAO;
-import cn.iocoder.yudao.module.system.framework.captcha.config.CaptchaProperties;
+import com.jiangtao.chuandao.module.system.controller.admin.common.vo.CaptchaImageRespVO;
+import com.jiangtao.chuandao.module.system.convert.common.CaptchaConvert;
+import com.jiangtao.chuandao.module.system.dal.redis.common.CaptchaRedisDAO;
+import com.jiangtao.chuandao.module.system.framework.captcha.config.CaptchaProperties;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
@@ -27,7 +27,7 @@ public class CaptchaServiceImpl implements CaptchaService {
      * 虽然 {@link CaptchaProperties#getEnable()} 有该属性，但是 Apollo 在 Spring Boot 下无法刷新 @ConfigurationProperties 注解，
      * 所以暂时只能这么处理~
      */
-    @Value("${yudao.captcha.enable}")
+    @Value("${chuandao.captcha.enable}")
     private Boolean enable;
 
     @Resource

@@ -1,13 +1,17 @@
 package com.jiangtao.chuandao.module.system.service.sms;
 
 import cn.hutool.core.collection.CollUtil;
+import com.jiangtao.chuandao.framework.common.pojo.PageResult;
 import com.jiangtao.chuandao.framework.common.util.collection.CollectionUtils;
+import com.jiangtao.chuandao.framework.sms.core.client.SmsClientFactory;
+import com.jiangtao.chuandao.framework.sms.core.property.SmsChannelProperties;
 import com.jiangtao.chuandao.module.system.controller.admin.sms.vo.channel.SmsChannelCreateReqVO;
 import com.jiangtao.chuandao.module.system.controller.admin.sms.vo.channel.SmsChannelPageReqVO;
 import com.jiangtao.chuandao.module.system.controller.admin.sms.vo.channel.SmsChannelUpdateReqVO;
 import com.jiangtao.chuandao.module.system.convert.sms.SmsChannelConvert;
 import com.jiangtao.chuandao.module.system.dal.dataobject.sms.SmsChannelDO;
 import com.jiangtao.chuandao.module.system.dal.mysql.sms.SmsChannelMapper;
+import com.jiangtao.chuandao.module.system.mq.producer.sms.SmsProducer;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
@@ -17,6 +21,9 @@ import javax.annotation.Resource;
 import java.util.Collection;
 import java.util.Date;
 import java.util.List;
+
+import static com.jiangtao.chuandao.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static com.jiangtao.chuandao.module.system.enums.ErrorCodeConstants.*;
 
 
 /**

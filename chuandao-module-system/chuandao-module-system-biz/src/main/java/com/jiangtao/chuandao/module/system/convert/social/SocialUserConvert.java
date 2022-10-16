@@ -1,9 +1,9 @@
 package com.jiangtao.chuandao.module.system.convert.social;
 
-import cn.iocoder.yudao.module.system.api.social.dto.SocialUserBindReqDTO;
-import cn.iocoder.yudao.module.system.api.social.dto.SocialUserUnbindReqDTO;
-import cn.iocoder.yudao.module.system.controller.admin.socail.vo.SocialUserBindReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.socail.vo.SocialUserUnbindReqVO;
+import com.jiangtao.chuandao.module.system.api.social.dto.SocialUserBindReqDTO;
+import com.jiangtao.chuandao.module.system.api.social.dto.SocialUserUnbindReqDTO;
+import com.jiangtao.chuandao.module.system.controller.admin.socail.vo.SocialUserBindReqVO;
+import com.jiangtao.chuandao.module.system.controller.admin.socail.vo.SocialUserUnbindReqVO;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 

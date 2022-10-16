@@ -1,9 +1,9 @@
 package com.jiangtao.chuandao.module.system.service.oauth2;
 
 import cn.hutool.core.util.IdUtil;
-import cn.iocoder.yudao.framework.common.util.date.DateUtils;
-import cn.iocoder.yudao.module.system.dal.dataobject.oauth2.OAuth2CodeDO;
-import cn.iocoder.yudao.module.system.dal.mysql.oauth2.OAuth2CodeMapper;
+import com.jiangtao.chuandao.framework.common.util.date.DateUtils;
+import com.jiangtao.chuandao.module.system.dal.dataobject.oauth2.OAuth2CodeDO;
+import com.jiangtao.chuandao.module.system.dal.mysql.oauth2.OAuth2CodeMapper;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
@@ -11,9 +11,10 @@ import javax.annotation.Resource;
 import java.util.Calendar;
 import java.util.List;
 
-import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
-import static cn.iocoder.yudao.module.system.enums.ErrorCodeConstants.OAUTH2_CODE_EXPIRE;
-import static cn.iocoder.yudao.module.system.enums.ErrorCodeConstants.OAUTH2_CODE_NOT_EXISTS;
+import static com.jiangtao.chuandao.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static com.jiangtao.chuandao.module.system.enums.ErrorCodeConstants.OAUTH2_CODE_EXPIRE;
+import static com.jiangtao.chuandao.module.system.enums.ErrorCodeConstants.OAUTH2_CODE_NOT_EXISTS;
+
 
 /**
  * OAuth2.0 授权码 Service 实现类

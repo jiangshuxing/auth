@@ -1,12 +1,12 @@
 package com.jiangtao.chuandao.module.system.convert.sms;
 
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.sms.core.property.SmsChannelProperties;
-import cn.iocoder.yudao.module.system.controller.admin.sms.vo.channel.SmsChannelCreateReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.sms.vo.channel.SmsChannelRespVO;
-import cn.iocoder.yudao.module.system.controller.admin.sms.vo.channel.SmsChannelSimpleRespVO;
-import cn.iocoder.yudao.module.system.controller.admin.sms.vo.channel.SmsChannelUpdateReqVO;
-import cn.iocoder.yudao.module.system.dal.dataobject.sms.SmsChannelDO;
+import com.jiangtao.chuandao.framework.common.pojo.PageResult;
+import com.jiangtao.chuandao.framework.sms.core.property.SmsChannelProperties;
+import com.jiangtao.chuandao.module.system.controller.admin.sms.vo.channel.SmsChannelCreateReqVO;
+import com.jiangtao.chuandao.module.system.controller.admin.sms.vo.channel.SmsChannelRespVO;
+import com.jiangtao.chuandao.module.system.controller.admin.sms.vo.channel.SmsChannelSimpleRespVO;
+import com.jiangtao.chuandao.module.system.controller.admin.sms.vo.channel.SmsChannelUpdateReqVO;
+import com.jiangtao.chuandao.module.system.dal.dataobject.sms.SmsChannelDO;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 

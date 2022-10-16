@@ -3,23 +3,23 @@ package com.jiangtao.chuandao.module.system.service.sms;
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.util.ReUtil;
 import cn.hutool.core.util.StrUtil;
-import cn.iocoder.yudao.framework.common.enums.CommonStatusEnum;
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.common.util.collection.CollectionUtils;
-import cn.iocoder.yudao.framework.sms.core.client.SmsClient;
-import cn.iocoder.yudao.framework.sms.core.client.SmsClientFactory;
-import cn.iocoder.yudao.framework.sms.core.client.SmsCommonResult;
-import cn.iocoder.yudao.framework.sms.core.client.dto.SmsTemplateRespDTO;
-import cn.iocoder.yudao.module.system.controller.admin.sms.vo.template.SmsTemplateCreateReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.sms.vo.template.SmsTemplateExportReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.sms.vo.template.SmsTemplatePageReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.sms.vo.template.SmsTemplateUpdateReqVO;
-import cn.iocoder.yudao.module.system.convert.sms.SmsTemplateConvert;
-import cn.iocoder.yudao.module.system.dal.dataobject.sms.SmsChannelDO;
-import cn.iocoder.yudao.module.system.dal.dataobject.sms.SmsTemplateDO;
-import cn.iocoder.yudao.module.system.dal.mysql.sms.SmsTemplateMapper;
-import cn.iocoder.yudao.module.system.mq.producer.sms.SmsProducer;
 import com.google.common.annotations.VisibleForTesting;
+import com.jiangtao.chuandao.framework.common.enums.CommonStatusEnum;
+import com.jiangtao.chuandao.framework.common.pojo.PageResult;
+import com.jiangtao.chuandao.framework.common.util.collection.CollectionUtils;
+import com.jiangtao.chuandao.framework.sms.core.client.SmsClient;
+import com.jiangtao.chuandao.framework.sms.core.client.SmsClientFactory;
+import com.jiangtao.chuandao.framework.sms.core.client.SmsCommonResult;
+import com.jiangtao.chuandao.framework.sms.core.client.dto.SmsTemplateRespDTO;
+import com.jiangtao.chuandao.module.system.controller.admin.sms.vo.template.SmsTemplateCreateReqVO;
+import com.jiangtao.chuandao.module.system.controller.admin.sms.vo.template.SmsTemplateExportReqVO;
+import com.jiangtao.chuandao.module.system.controller.admin.sms.vo.template.SmsTemplatePageReqVO;
+import com.jiangtao.chuandao.module.system.controller.admin.sms.vo.template.SmsTemplateUpdateReqVO;
+import com.jiangtao.chuandao.module.system.convert.sms.SmsTemplateConvert;
+import com.jiangtao.chuandao.module.system.dal.dataobject.sms.SmsChannelDO;
+import com.jiangtao.chuandao.module.system.dal.dataobject.sms.SmsTemplateDO;
+import com.jiangtao.chuandao.module.system.dal.mysql.sms.SmsTemplateMapper;
+import com.jiangtao.chuandao.module.system.mq.producer.sms.SmsProducer;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
@@ -30,8 +30,9 @@ import javax.annotation.Resource;
 import java.util.*;
 import java.util.regex.Pattern;
 
-import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
-import static cn.iocoder.yudao.module.system.enums.ErrorCodeConstants.*;
+import static com.jiangtao.chuandao.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static com.jiangtao.chuandao.module.system.enums.ErrorCodeConstants.*;
+
 
 /**
  * 短信模板 Service 实现类

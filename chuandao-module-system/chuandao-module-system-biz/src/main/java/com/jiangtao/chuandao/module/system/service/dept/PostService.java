@@ -1,18 +1,19 @@
 package com.jiangtao.chuandao.module.system.service.dept;
 
-import cn.iocoder.yudao.framework.common.enums.CommonStatusEnum;
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.module.system.controller.admin.dept.vo.post.PostCreateReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.dept.vo.post.PostExportReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.dept.vo.post.PostPageReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.dept.vo.post.PostUpdateReqVO;
-import cn.iocoder.yudao.module.system.dal.dataobject.dept.PostDO;
+import com.jiangtao.chuandao.framework.common.enums.CommonStatusEnum;
+import com.jiangtao.chuandao.framework.common.pojo.PageResult;
+import com.jiangtao.chuandao.module.system.controller.admin.dept.vo.post.PostCreateReqVO;
+import com.jiangtao.chuandao.module.system.controller.admin.dept.vo.post.PostExportReqVO;
+import com.jiangtao.chuandao.module.system.controller.admin.dept.vo.post.PostPageReqVO;
+import com.jiangtao.chuandao.module.system.controller.admin.dept.vo.post.PostUpdateReqVO;
+import com.jiangtao.chuandao.module.system.dal.dataobject.dept.PostDO;
 import org.springframework.lang.Nullable;
 
 import java.util.Collection;
 import java.util.List;
 
-import static cn.iocoder.yudao.framework.common.util.collection.SetUtils.asSet;
+import static com.jiangtao.chuandao.framework.common.util.collection.SetUtils.asSet;
+
 
 /**
  * 岗位 Service 接口

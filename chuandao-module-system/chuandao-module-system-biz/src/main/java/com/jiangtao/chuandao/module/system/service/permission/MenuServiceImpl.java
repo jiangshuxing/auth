@@ -2,22 +2,22 @@ package com.jiangtao.chuandao.module.system.service.permission;
 
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.util.StrUtil;
-import cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil;
-import cn.iocoder.yudao.framework.common.util.collection.CollectionUtils;
-import cn.iocoder.yudao.module.system.controller.admin.permission.vo.menu.MenuCreateReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.permission.vo.menu.MenuListReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.permission.vo.menu.MenuUpdateReqVO;
-import cn.iocoder.yudao.module.system.convert.permission.MenuConvert;
-import cn.iocoder.yudao.module.system.dal.dataobject.permission.MenuDO;
-import cn.iocoder.yudao.module.system.dal.mysql.permission.MenuMapper;
-import cn.iocoder.yudao.module.system.enums.permission.MenuIdEnum;
-import cn.iocoder.yudao.module.system.enums.permission.MenuTypeEnum;
-import cn.iocoder.yudao.module.system.mq.producer.permission.MenuProducer;
-import cn.iocoder.yudao.module.system.service.tenant.TenantService;
 import com.google.common.annotations.VisibleForTesting;
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
+import com.jiangtao.chuandao.framework.common.exception.util.ServiceExceptionUtil;
+import com.jiangtao.chuandao.framework.common.util.collection.CollectionUtils;
+import com.jiangtao.chuandao.module.system.controller.admin.permission.vo.menu.MenuCreateReqVO;
+import com.jiangtao.chuandao.module.system.controller.admin.permission.vo.menu.MenuListReqVO;
+import com.jiangtao.chuandao.module.system.controller.admin.permission.vo.menu.MenuUpdateReqVO;
+import com.jiangtao.chuandao.module.system.convert.permission.MenuConvert;
+import com.jiangtao.chuandao.module.system.dal.dataobject.permission.MenuDO;
+import com.jiangtao.chuandao.module.system.dal.mysql.permission.MenuMapper;
+import com.jiangtao.chuandao.module.system.enums.permission.MenuIdEnum;
+import com.jiangtao.chuandao.module.system.enums.permission.MenuTypeEnum;
+import com.jiangtao.chuandao.module.system.mq.producer.permission.MenuProducer;
+import com.jiangtao.chuandao.module.system.service.tenant.TenantService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.scheduling.annotation.Scheduled;
@@ -31,7 +31,8 @@ import javax.annotation.Resource;
 import java.util.*;
 import java.util.stream.Collectors;
 
-import static cn.iocoder.yudao.module.system.enums.ErrorCodeConstants.*;
+import static com.jiangtao.chuandao.module.system.enums.ErrorCodeConstants.*;
+
 
 /**
  * 菜单 Service 实现

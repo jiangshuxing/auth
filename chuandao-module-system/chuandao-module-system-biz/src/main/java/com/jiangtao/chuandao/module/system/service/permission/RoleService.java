@@ -1,11 +1,11 @@
 package com.jiangtao.chuandao.module.system.service.permission;
 
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.module.system.controller.admin.permission.vo.role.RoleCreateReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.permission.vo.role.RoleExportReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.permission.vo.role.RolePageReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.permission.vo.role.RoleUpdateReqVO;
-import cn.iocoder.yudao.module.system.dal.dataobject.permission.RoleDO;
+import com.jiangtao.chuandao.framework.common.pojo.PageResult;
+import com.jiangtao.chuandao.module.system.controller.admin.permission.vo.role.RoleCreateReqVO;
+import com.jiangtao.chuandao.module.system.controller.admin.permission.vo.role.RoleExportReqVO;
+import com.jiangtao.chuandao.module.system.controller.admin.permission.vo.role.RolePageReqVO;
+import com.jiangtao.chuandao.module.system.controller.admin.permission.vo.role.RoleUpdateReqVO;
+import com.jiangtao.chuandao.module.system.dal.dataobject.permission.RoleDO;
 import org.springframework.lang.Nullable;
 
 import javax.validation.Valid;

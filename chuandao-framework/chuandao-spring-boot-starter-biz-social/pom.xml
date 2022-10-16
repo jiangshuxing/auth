@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>chuandao-framework</artifactId>
+        <groupId>com.jiangtao</groupId>
+        <version>${revision}</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>chuandao-spring-boot-starter-biz-social</artifactId>
+    <packaging>jar</packaging>
+    <name>${project.artifactId}</name>
+
+
+    <dependencies>
+        <dependency>
+            <groupId>com.jiangtao</groupId>
+            <artifactId>chaungdao-common</artifactId>
+            <version>${revision}</version>
+        </dependency>
+        <!-- Spring 核心 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
+        <!-- Web 相关 -->
+        <dependency>
+            <groupId>com.jiangtao</groupId>
+            <artifactId>chuandao-spring-boot-starter-web</artifactId>
+            <version>${revision}</version>
+        </dependency>
+        <!-- spring boot 配置所需依赖 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <!-- 三方服务相关 -->
+        <dependency>
+            <groupId>me.zhyd.oauth</groupId>
+            <artifactId>JustAuth</artifactId>
+            <version>${justAuth.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.xkcoding.justauth</groupId>
+            <artifactId>justauth-spring-boot-starter</artifactId>
+            <version>${justAuth.spring.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>cn.hutool</groupId>
+                    <artifactId>hutool-core</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>com.jiangtao</groupId>
+            <artifactId>chuandao-spring-boot-starter-redis</artifactId>
+            <version>${revision}</version>
+        </dependency>
+
+    </dependencies>
+
+</project>

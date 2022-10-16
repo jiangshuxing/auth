@@ -1,7 +1,7 @@
 package com.jiangtao.chuandao.module.system.dal.mysql.permission;
 
-import cn.iocoder.yudao.module.system.dal.dataobject.permission.UserRoleDO;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.jiangtao.chuandao.module.system.dal.dataobject.permission.UserRoleDO;
 import org.springframework.stereotype.Repository;
 
 /**

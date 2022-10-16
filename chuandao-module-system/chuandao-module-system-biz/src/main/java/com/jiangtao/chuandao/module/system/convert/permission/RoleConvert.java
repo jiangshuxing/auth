@@ -1,8 +1,8 @@
 package com.jiangtao.chuandao.module.system.convert.permission;
 
-import cn.iocoder.yudao.module.system.controller.admin.permission.vo.role.*;
-import cn.iocoder.yudao.module.system.dal.dataobject.permission.RoleDO;
-import cn.iocoder.yudao.module.system.service.permission.bo.RoleCreateReqBO;
+import com.jiangtao.chuandao.module.system.controller.admin.permission.vo.role.*;
+import com.jiangtao.chuandao.module.system.dal.dataobject.permission.RoleDO;
+import com.jiangtao.chuandao.module.system.service.permission.bo.RoleCreateReqBO;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 

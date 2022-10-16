@@ -3,18 +3,19 @@ package com.jiangtao.chuandao.module.system.service.oauth2;
 import cn.hutool.core.lang.Assert;
 import cn.hutool.core.util.ObjectUtil;
 import cn.hutool.core.util.StrUtil;
-import cn.iocoder.yudao.framework.common.enums.UserTypeEnum;
-import cn.iocoder.yudao.module.system.dal.dataobject.oauth2.OAuth2AccessTokenDO;
-import cn.iocoder.yudao.module.system.dal.dataobject.oauth2.OAuth2CodeDO;
-import cn.iocoder.yudao.module.system.dal.dataobject.user.AdminUserDO;
-import cn.iocoder.yudao.module.system.enums.ErrorCodeConstants;
-import cn.iocoder.yudao.module.system.service.auth.AdminAuthService;
+import com.jiangtao.chuandao.framework.common.enums.UserTypeEnum;
+import com.jiangtao.chuandao.module.system.dal.dataobject.oauth2.OAuth2AccessTokenDO;
+import com.jiangtao.chuandao.module.system.dal.dataobject.oauth2.OAuth2CodeDO;
+import com.jiangtao.chuandao.module.system.dal.dataobject.user.AdminUserDO;
+import com.jiangtao.chuandao.module.system.enums.ErrorCodeConstants;
+import com.jiangtao.chuandao.module.system.service.auth.AdminAuthService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import java.util.List;
 
-import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static com.jiangtao.chuandao.framework.common.exception.util.ServiceExceptionUtil.exception;
+
 
 /**
  * OAuth2 授予 Service 实现类

@@ -1,18 +1,18 @@
 package com.jiangtao.chuandao.module.system.service.dict;
 
 import cn.hutool.core.collection.CollUtil;
-import cn.iocoder.yudao.framework.common.enums.CommonStatusEnum;
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.common.util.collection.CollectionUtils;
-import cn.iocoder.yudao.module.system.controller.admin.dict.vo.data.DictDataCreateReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.dict.vo.data.DictDataExportReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.dict.vo.data.DictDataPageReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.dict.vo.data.DictDataUpdateReqVO;
-import cn.iocoder.yudao.module.system.convert.dict.DictDataConvert;
-import cn.iocoder.yudao.module.system.dal.dataobject.dict.DictDataDO;
-import cn.iocoder.yudao.module.system.dal.dataobject.dict.DictTypeDO;
-import cn.iocoder.yudao.module.system.dal.mysql.dict.DictDataMapper;
 import com.google.common.annotations.VisibleForTesting;
+import com.jiangtao.chuandao.framework.common.enums.CommonStatusEnum;
+import com.jiangtao.chuandao.framework.common.pojo.PageResult;
+import com.jiangtao.chuandao.framework.common.util.collection.CollectionUtils;
+import com.jiangtao.chuandao.module.system.controller.admin.dict.vo.data.DictDataCreateReqVO;
+import com.jiangtao.chuandao.module.system.controller.admin.dict.vo.data.DictDataExportReqVO;
+import com.jiangtao.chuandao.module.system.controller.admin.dict.vo.data.DictDataPageReqVO;
+import com.jiangtao.chuandao.module.system.controller.admin.dict.vo.data.DictDataUpdateReqVO;
+import com.jiangtao.chuandao.module.system.convert.dict.DictDataConvert;
+import com.jiangtao.chuandao.module.system.dal.dataobject.dict.DictDataDO;
+import com.jiangtao.chuandao.module.system.dal.dataobject.dict.DictTypeDO;
+import com.jiangtao.chuandao.module.system.dal.mysql.dict.DictDataMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
@@ -22,8 +22,8 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 
-import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
-import static cn.iocoder.yudao.module.system.enums.ErrorCodeConstants.*;
+import static com.jiangtao.chuandao.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static com.jiangtao.chuandao.module.system.enums.ErrorCodeConstants.*;
 
 /**
  * 字典数据 Service 实现类

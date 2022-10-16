@@ -1,7 +1,7 @@
 package com.jiangtao.chuandao.module.system.controller.admin.auth.vo;
 
-import cn.iocoder.yudao.framework.common.validation.InEnum;
-import cn.iocoder.yudao.module.system.enums.social.SocialTypeEnum;
+import com.jiangtao.chuandao.framework.common.validation.InEnum;
+import com.jiangtao.chuandao.module.system.enums.social.SocialTypeEnum;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.AllArgsConstructor;

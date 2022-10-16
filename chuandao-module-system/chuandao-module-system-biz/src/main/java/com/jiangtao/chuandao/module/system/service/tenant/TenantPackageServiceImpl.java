@@ -1,15 +1,15 @@
 package com.jiangtao.chuandao.module.system.service.tenant;
 
 import cn.hutool.core.collection.CollUtil;
-import cn.iocoder.yudao.framework.common.enums.CommonStatusEnum;
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.module.system.controller.admin.tenant.vo.packages.TenantPackageCreateReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.tenant.vo.packages.TenantPackagePageReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.tenant.vo.packages.TenantPackageUpdateReqVO;
-import cn.iocoder.yudao.module.system.convert.tenant.TenantPackageConvert;
-import cn.iocoder.yudao.module.system.dal.dataobject.tenant.TenantDO;
-import cn.iocoder.yudao.module.system.dal.dataobject.tenant.TenantPackageDO;
-import cn.iocoder.yudao.module.system.dal.mysql.tenant.TenantPackageMapper;
+import com.jiangtao.chuandao.framework.common.enums.CommonStatusEnum;
+import com.jiangtao.chuandao.framework.common.pojo.PageResult;
+import com.jiangtao.chuandao.module.system.controller.admin.tenant.vo.packages.TenantPackageCreateReqVO;
+import com.jiangtao.chuandao.module.system.controller.admin.tenant.vo.packages.TenantPackagePageReqVO;
+import com.jiangtao.chuandao.module.system.controller.admin.tenant.vo.packages.TenantPackageUpdateReqVO;
+import com.jiangtao.chuandao.module.system.convert.tenant.TenantPackageConvert;
+import com.jiangtao.chuandao.module.system.dal.dataobject.tenant.TenantDO;
+import com.jiangtao.chuandao.module.system.dal.dataobject.tenant.TenantPackageDO;
+import com.jiangtao.chuandao.module.system.dal.mysql.tenant.TenantPackageMapper;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -18,8 +18,9 @@ import org.springframework.validation.annotation.Validated;
 import javax.annotation.Resource;
 import java.util.List;
 
-import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
-import static cn.iocoder.yudao.module.system.enums.ErrorCodeConstants.*;
+import static com.jiangtao.chuandao.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static com.jiangtao.chuandao.module.system.enums.ErrorCodeConstants.*;
+
 
 /**
  * 租户套餐 Service 实现类

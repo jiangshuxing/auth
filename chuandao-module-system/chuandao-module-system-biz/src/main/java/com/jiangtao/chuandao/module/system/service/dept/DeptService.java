@@ -2,6 +2,9 @@ package com.jiangtao.chuandao.module.system.service.dept;
 
 import cn.hutool.core.collection.CollUtil;
 import com.jiangtao.chuandao.framework.common.util.collection.CollectionUtils;
+import com.jiangtao.chuandao.module.system.controller.admin.dept.vo.dept.DeptCreateReqVO;
+import com.jiangtao.chuandao.module.system.controller.admin.dept.vo.dept.DeptListReqVO;
+import com.jiangtao.chuandao.module.system.controller.admin.dept.vo.dept.DeptUpdateReqVO;
 import com.jiangtao.chuandao.module.system.dal.dataobject.dept.DeptDO;
 
 import java.util.Collection;

@@ -5,6 +5,7 @@ import com.jiangtao.chuandao.framework.common.enums.CommonStatusEnum;
 import com.jiangtao.chuandao.framework.mybatis.core.dataobject.BaseDO;
 import com.jiangtao.chuandao.module.system.dal.dataobject.user.AdminUserDO;
 import lombok.*;
+import lombok.experimental.Accessors;
 
 import java.util.Date;
 
@@ -19,6 +20,7 @@ import java.util.Date;
 @EqualsAndHashCode(callSuper = true)
 @ToString(callSuper = true)
 @Builder
+@Accessors(chain = true)
 @AllArgsConstructor
 @NoArgsConstructor
 public class TenantDO extends BaseDO {

@@ -1,11 +1,11 @@
 package com.jiangtao.chuandao.module.system.convert.dept;
 
-import cn.iocoder.yudao.module.system.api.dept.dto.DeptRespDTO;
-import cn.iocoder.yudao.module.system.controller.admin.dept.vo.dept.DeptCreateReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.dept.vo.dept.DeptRespVO;
-import cn.iocoder.yudao.module.system.controller.admin.dept.vo.dept.DeptSimpleRespVO;
-import cn.iocoder.yudao.module.system.controller.admin.dept.vo.dept.DeptUpdateReqVO;
-import cn.iocoder.yudao.module.system.dal.dataobject.dept.DeptDO;
+import com.jiangtao.chuandao.module.system.api.dept.dto.DeptRespDTO;
+import com.jiangtao.chuandao.module.system.controller.admin.dept.vo.dept.DeptCreateReqVO;
+import com.jiangtao.chuandao.module.system.controller.admin.dept.vo.dept.DeptRespVO;
+import com.jiangtao.chuandao.module.system.controller.admin.dept.vo.dept.DeptSimpleRespVO;
+import com.jiangtao.chuandao.module.system.controller.admin.dept.vo.dept.DeptUpdateReqVO;
+import com.jiangtao.chuandao.module.system.dal.dataobject.dept.DeptDO;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 

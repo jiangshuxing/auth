@@ -4,6 +4,7 @@ import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.lang.Assert;
 
 import com.jiangtao.chuandao.framework.common.util.http.HttpUtils;
+import com.jiangtao.chuandao.framework.social.core.YudaoAuthRequestFactory;
 import com.jiangtao.chuandao.module.system.api.social.dto.SocialUserBindReqDTO;
 import com.jiangtao.chuandao.module.system.dal.dataobject.social.SocialUserBindDO;
 import com.jiangtao.chuandao.module.system.dal.dataobject.social.SocialUserDO;
@@ -12,6 +13,11 @@ import com.jiangtao.chuandao.module.system.dal.mysql.social.SocialUserMapper;
 import com.jiangtao.chuandao.module.system.enums.social.SocialTypeEnum;
 import lombok.extern.slf4j.Slf4j;
 
+import me.zhyd.oauth.model.AuthCallback;
+import me.zhyd.oauth.model.AuthResponse;
+import me.zhyd.oauth.model.AuthUser;
+import me.zhyd.oauth.request.AuthRequest;
+import me.zhyd.oauth.utils.AuthStateUtils;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
@@ -19,6 +25,11 @@ import org.springframework.validation.annotation.Validated;
 import javax.annotation.Resource;
 import java.util.Collections;
 import java.util.List;
+
+import static com.jiangtao.chuandao.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static com.jiangtao.chuandao.framework.common.util.collection.CollectionUtils.convertSet;
+import static com.jiangtao.chuandao.framework.common.util.json.JsonUtils.toJsonString;
+import static com.jiangtao.chuandao.module.system.enums.ErrorCodeConstants.*;
 
 
 /**
@@ -32,7 +43,7 @@ import java.util.List;
 public class SocialUserServiceImpl implements SocialUserService {
      // YudaoAuthRequestFactory
     @Resource// 由于自定义了 YudaoAuthRequestFactory 无法覆盖默认的 AuthRequestFactory，所以只能注入它
-    private  ChuandaoAuth  yudaoAuthRequestFactory;
+    private YudaoAuthRequestFactory yudaoAuthRequestFactory;
 
     @Resource
     private SocialUserBindMapper socialUserBindMapper;

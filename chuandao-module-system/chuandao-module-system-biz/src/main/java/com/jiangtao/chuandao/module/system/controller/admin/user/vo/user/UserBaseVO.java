@@ -1,8 +1,9 @@
 package com.jiangtao.chuandao.module.system.controller.admin.user.vo.user;
 
-import cn.iocoder.yudao.framework.common.validation.Mobile;
+import com.jiangtao.chuandao.framework.common.validation.Mobile;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
+import lombok.experimental.Accessors;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
@@ -15,6 +16,7 @@ import java.util.Set;
  * 如果子 VO 存在差异的字段，请不要添加到这里，影响 Swagger 文档生成
  */
 @Data
+@Accessors(chain = true)
 public class UserBaseVO {
 
     @ApiModelProperty(value = "用户账号", required = true, example = "yudao")

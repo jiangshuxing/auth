@@ -1,16 +1,16 @@
 package com.jiangtao.chuandao.module.system.service.dept;
 
 import cn.hutool.core.collection.CollUtil;
-import cn.iocoder.yudao.framework.common.enums.CommonStatusEnum;
-import cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil;
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.module.system.controller.admin.dept.vo.post.PostCreateReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.dept.vo.post.PostExportReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.dept.vo.post.PostPageReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.dept.vo.post.PostUpdateReqVO;
-import cn.iocoder.yudao.module.system.convert.dept.PostConvert;
-import cn.iocoder.yudao.module.system.dal.dataobject.dept.PostDO;
-import cn.iocoder.yudao.module.system.dal.mysql.dept.PostMapper;
+import com.jiangtao.chuandao.framework.common.enums.CommonStatusEnum;
+import com.jiangtao.chuandao.framework.common.exception.util.ServiceExceptionUtil;
+import com.jiangtao.chuandao.framework.common.pojo.PageResult;
+import com.jiangtao.chuandao.module.system.controller.admin.dept.vo.post.PostCreateReqVO;
+import com.jiangtao.chuandao.module.system.controller.admin.dept.vo.post.PostExportReqVO;
+import com.jiangtao.chuandao.module.system.controller.admin.dept.vo.post.PostPageReqVO;
+import com.jiangtao.chuandao.module.system.controller.admin.dept.vo.post.PostUpdateReqVO;
+import com.jiangtao.chuandao.module.system.convert.dept.PostConvert;
+import com.jiangtao.chuandao.module.system.dal.dataobject.dept.PostDO;
+import com.jiangtao.chuandao.module.system.dal.mysql.dept.PostMapper;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 
@@ -19,9 +19,10 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 
-import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
-import static cn.iocoder.yudao.framework.common.util.collection.CollectionUtils.convertMap;
-import static cn.iocoder.yudao.module.system.enums.ErrorCodeConstants.*;
+import static com.jiangtao.chuandao.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static com.jiangtao.chuandao.framework.common.util.collection.CollectionUtils.convertMap;
+import static com.jiangtao.chuandao.module.system.enums.ErrorCodeConstants.*;
+
 
 /**
  * 岗位 Service 实现类
@@ -98,10 +99,10 @@ public class PostServiceImpl implements PostService {
         }
         // 如果 id 为空，说明不用比较是否为相同 id 的岗位
         if (id == null) {
-            throw ServiceExceptionUtil.exception(POST_NAME_DUPLICATE);
+            throw exception(POST_NAME_DUPLICATE);
         }
         if (!post.getId().equals(id)) {
-            throw ServiceExceptionUtil.exception(POST_NAME_DUPLICATE);
+            throw exception(POST_NAME_DUPLICATE);
         }
     }
 
@@ -112,10 +113,10 @@ public class PostServiceImpl implements PostService {
         }
         // 如果 id 为空，说明不用比较是否为相同 id 的岗位
         if (id == null) {
-            throw ServiceExceptionUtil.exception(POST_CODE_DUPLICATE);
+            throw exception(POST_CODE_DUPLICATE);
         }
         if (!post.getId().equals(id)) {
-            throw ServiceExceptionUtil.exception(POST_CODE_DUPLICATE);
+            throw exception(POST_CODE_DUPLICATE);
         }
     }
 
@@ -125,7 +126,7 @@ public class PostServiceImpl implements PostService {
         }
         PostDO post = postMapper.selectById(id);
         if (post == null) {
-            throw ServiceExceptionUtil.exception(POST_NOT_FOUND);
+            throw exception(POST_NOT_FOUND);
         }
     }
 

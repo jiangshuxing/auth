@@ -22,6 +22,13 @@
         <module>chuandao-spring-boot-starter-biz-operatelog</module>
         <module>chuandao-spring-boot-starter-biz-dict</module>
         <module>chuandao-spring-boot-starter-biz-tenant</module>
+        <module>chuandao-spring-boot-starter-biz-error-code</module>
+        <module>chuandao-spring-boot-starter-biz-social</module>
+        <module>chuandao-spring-boot-starter-biz-sms</module>
+        <module>chuandao-spring-boot-starter-mq</module>
+        <module>chuandao-spring-boot-starter-file</module>
+        <module>chuandao-spring-boot-starter-excel</module>
+        <module>chuandao-spring-boot-starter-job</module>
     </modules>
 
 

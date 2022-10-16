@@ -3,17 +3,17 @@ package com.jiangtao.chuandao.module.system.service.oauth2;
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.util.ObjectUtil;
 import cn.hutool.core.util.StrUtil;
-import cn.iocoder.yudao.framework.common.enums.CommonStatusEnum;
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.common.util.string.StrUtils;
-import cn.iocoder.yudao.module.system.controller.admin.oauth2.vo.client.OAuth2ClientCreateReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.oauth2.vo.client.OAuth2ClientPageReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.oauth2.vo.client.OAuth2ClientUpdateReqVO;
-import cn.iocoder.yudao.module.system.convert.auth.OAuth2ClientConvert;
-import cn.iocoder.yudao.module.system.dal.dataobject.oauth2.OAuth2ClientDO;
-import cn.iocoder.yudao.module.system.dal.mysql.oauth2.OAuth2ClientMapper;
-import cn.iocoder.yudao.module.system.mq.producer.auth.OAuth2ClientProducer;
 import com.google.common.annotations.VisibleForTesting;
+import com.jiangtao.chuandao.framework.common.enums.CommonStatusEnum;
+import com.jiangtao.chuandao.framework.common.pojo.PageResult;
+import com.jiangtao.chuandao.framework.common.util.string.StrUtils;
+import com.jiangtao.chuandao.module.system.controller.admin.oauth2.vo.client.OAuth2ClientCreateReqVO;
+import com.jiangtao.chuandao.module.system.controller.admin.oauth2.vo.client.OAuth2ClientPageReqVO;
+import com.jiangtao.chuandao.module.system.controller.admin.oauth2.vo.client.OAuth2ClientUpdateReqVO;
+import com.jiangtao.chuandao.module.system.convert.auth.OAuth2ClientConvert;
+import com.jiangtao.chuandao.module.system.dal.dataobject.oauth2.OAuth2ClientDO;
+import com.jiangtao.chuandao.module.system.dal.mysql.oauth2.OAuth2ClientMapper;
+import com.jiangtao.chuandao.module.system.mq.producer.auth.OAuth2ClientProducer;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
@@ -28,10 +28,11 @@ import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
-import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
-import static cn.iocoder.yudao.framework.common.util.collection.CollectionUtils.convertMap;
-import static cn.iocoder.yudao.framework.common.util.collection.CollectionUtils.getMaxValue;
-import static cn.iocoder.yudao.module.system.enums.ErrorCodeConstants.*;
+import static com.jiangtao.chuandao.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static com.jiangtao.chuandao.framework.common.util.collection.CollectionUtils.convertMap;
+import static com.jiangtao.chuandao.framework.common.util.collection.CollectionUtils.getMaxValue;
+import static com.jiangtao.chuandao.module.system.enums.ErrorCodeConstants.*;
+
 
 /**
  * OAuth2.0 Client Service 实现类

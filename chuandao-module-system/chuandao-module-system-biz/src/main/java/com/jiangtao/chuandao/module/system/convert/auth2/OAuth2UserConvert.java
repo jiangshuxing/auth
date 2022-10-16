@@ -1,5 +1,8 @@
 package com.jiangtao.chuandao.module.system.convert.auth2;
 
+import com.jiangtao.chuandao.module.system.controller.admin.oauth2.vo.user.OAuth2UserInfoRespVO;
+import com.jiangtao.chuandao.module.system.controller.admin.oauth2.vo.user.OAuth2UserUpdateReqVO;
+import com.jiangtao.chuandao.module.system.controller.admin.user.vo.profile.UserProfileUpdateReqVO;
 import com.jiangtao.chuandao.module.system.dal.dataobject.dept.DeptDO;
 import com.jiangtao.chuandao.module.system.dal.dataobject.dept.PostDO;
 import com.jiangtao.chuandao.module.system.dal.dataobject.user.AdminUserDO;

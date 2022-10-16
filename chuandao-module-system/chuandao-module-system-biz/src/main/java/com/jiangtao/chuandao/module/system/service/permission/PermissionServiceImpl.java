@@ -3,31 +3,30 @@ package com.jiangtao.chuandao.module.system.service.permission;
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.collection.CollectionUtil;
 import cn.hutool.core.util.ArrayUtil;
-import cn.iocoder.yudao.framework.common.enums.CommonStatusEnum;
-import cn.iocoder.yudao.framework.common.util.collection.CollectionUtils;
-import cn.iocoder.yudao.framework.common.util.collection.MapUtils;
-import cn.iocoder.yudao.framework.common.util.json.JsonUtils;
-import cn.iocoder.yudao.framework.datapermission.core.annotation.DataPermission;
-import cn.iocoder.yudao.framework.tenant.core.aop.TenantIgnore;
-import cn.iocoder.yudao.module.system.api.permission.dto.DeptDataPermissionRespDTO;
-import cn.iocoder.yudao.module.system.dal.dataobject.dept.DeptDO;
-import cn.iocoder.yudao.module.system.dal.dataobject.permission.MenuDO;
-import cn.iocoder.yudao.module.system.dal.dataobject.permission.RoleDO;
-import cn.iocoder.yudao.module.system.dal.dataobject.permission.RoleMenuDO;
-import cn.iocoder.yudao.module.system.dal.dataobject.permission.UserRoleDO;
-import cn.iocoder.yudao.module.system.dal.mysql.permission.RoleMenuBatchInsertMapper;
-import cn.iocoder.yudao.module.system.dal.mysql.permission.RoleMenuMapper;
-import cn.iocoder.yudao.module.system.dal.mysql.permission.UserRoleBatchInsertMapper;
-import cn.iocoder.yudao.module.system.dal.mysql.permission.UserRoleMapper;
-import cn.iocoder.yudao.module.system.enums.permission.DataScopeEnum;
-import cn.iocoder.yudao.module.system.mq.producer.permission.PermissionProducer;
-import cn.iocoder.yudao.module.system.service.dept.DeptService;
-import cn.iocoder.yudao.module.system.service.user.AdminUserService;
 import com.google.common.annotations.VisibleForTesting;
 import com.google.common.base.Suppliers;
 import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
 import com.google.common.collect.Sets;
+import com.jiangtao.chuandao.framework.common.enums.CommonStatusEnum;
+import com.jiangtao.chuandao.framework.common.util.collection.CollectionUtils;
+import com.jiangtao.chuandao.framework.common.util.collection.MapUtils;
+import com.jiangtao.chuandao.framework.common.util.json.JsonUtils;
+import com.jiangtao.chuandao.framework.tenant.core.aop.TenantIgnore;
+import com.jiangtao.chuandao.module.system.api.permission.dto.DeptDataPermissionRespDTO;
+import com.jiangtao.chuandao.module.system.dal.dataobject.dept.DeptDO;
+import com.jiangtao.chuandao.module.system.dal.dataobject.permission.MenuDO;
+import com.jiangtao.chuandao.module.system.dal.dataobject.permission.RoleDO;
+import com.jiangtao.chuandao.module.system.dal.dataobject.permission.RoleMenuDO;
+import com.jiangtao.chuandao.module.system.dal.dataobject.permission.UserRoleDO;
+import com.jiangtao.chuandao.module.system.dal.mysql.permission.RoleMenuBatchInsertMapper;
+import com.jiangtao.chuandao.module.system.dal.mysql.permission.RoleMenuMapper;
+import com.jiangtao.chuandao.module.system.dal.mysql.permission.UserRoleBatchInsertMapper;
+import com.jiangtao.chuandao.module.system.dal.mysql.permission.UserRoleMapper;
+import com.jiangtao.chuandao.module.system.enums.permission.DataScopeEnum;
+import com.jiangtao.chuandao.module.system.mq.producer.permission.PermissionProducer;
+import com.jiangtao.chuandao.module.system.service.dept.DeptService;
+import com.jiangtao.chuandao.module.system.service.user.AdminUserService;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
@@ -43,8 +42,8 @@ import javax.annotation.Resource;
 import java.util.*;
 import java.util.function.Supplier;
 
-import static cn.iocoder.yudao.framework.common.util.collection.CollectionUtils.convertSet;
-import static cn.iocoder.yudao.framework.common.util.collection.CollectionUtils.getMaxValue;
+import static com.jiangtao.chuandao.framework.common.util.collection.CollectionUtils.convertSet;
+import static com.jiangtao.chuandao.framework.common.util.collection.CollectionUtils.getMaxValue;
 import static java.util.Collections.singleton;
 
 /**
@@ -455,7 +454,7 @@ public class PermissionServiceImpl implements PermissionService {
     }
 
     @Override
-    @DataPermission(enable = false) // 关闭数据权限，不然就会出现递归获取数据权限的问题
+//    @DataPermission(enable = false) // 关闭数据权限，不然就会出现递归获取数据权限的问题
     @TenantIgnore // 忽略多租户的自动过滤。如果不忽略，会导致添加租户时，因为切换租户，导致获取不到 User。即使忽略，本身该方法不存在跨租户的操作，不会存在问题。
     public DeptDataPermissionRespDTO getDeptDataPermission(Long userId) {
         // 获得用户的角色

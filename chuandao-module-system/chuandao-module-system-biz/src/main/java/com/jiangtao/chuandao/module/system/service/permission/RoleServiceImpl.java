@@ -3,22 +3,22 @@ package com.jiangtao.chuandao.module.system.service.permission;
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.collection.CollectionUtil;
 import cn.hutool.core.util.ObjectUtil;
-import cn.iocoder.yudao.framework.common.enums.CommonStatusEnum;
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.common.util.collection.CollectionUtils;
-import cn.iocoder.yudao.framework.tenant.core.aop.TenantIgnore;
-import cn.iocoder.yudao.module.system.controller.admin.permission.vo.role.RoleCreateReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.permission.vo.role.RoleExportReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.permission.vo.role.RolePageReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.permission.vo.role.RoleUpdateReqVO;
-import cn.iocoder.yudao.module.system.convert.permission.RoleConvert;
-import cn.iocoder.yudao.module.system.dal.dataobject.permission.RoleDO;
-import cn.iocoder.yudao.module.system.dal.mysql.permission.RoleMapper;
-import cn.iocoder.yudao.module.system.enums.permission.DataScopeEnum;
-import cn.iocoder.yudao.module.system.enums.permission.RoleCodeEnum;
-import cn.iocoder.yudao.module.system.enums.permission.RoleTypeEnum;
-import cn.iocoder.yudao.module.system.mq.producer.permission.RoleProducer;
 import com.google.common.annotations.VisibleForTesting;
+import com.jiangtao.chuandao.framework.common.enums.CommonStatusEnum;
+import com.jiangtao.chuandao.framework.common.pojo.PageResult;
+import com.jiangtao.chuandao.framework.common.util.collection.CollectionUtils;
+import com.jiangtao.chuandao.framework.tenant.core.aop.TenantIgnore;
+import com.jiangtao.chuandao.module.system.controller.admin.permission.vo.role.RoleCreateReqVO;
+import com.jiangtao.chuandao.module.system.controller.admin.permission.vo.role.RoleExportReqVO;
+import com.jiangtao.chuandao.module.system.controller.admin.permission.vo.role.RolePageReqVO;
+import com.jiangtao.chuandao.module.system.controller.admin.permission.vo.role.RoleUpdateReqVO;
+import com.jiangtao.chuandao.module.system.convert.permission.RoleConvert;
+import com.jiangtao.chuandao.module.system.dal.dataobject.permission.RoleDO;
+import com.jiangtao.chuandao.module.system.dal.mysql.permission.RoleMapper;
+import com.jiangtao.chuandao.module.system.enums.permission.DataScopeEnum;
+import com.jiangtao.chuandao.module.system.enums.permission.RoleCodeEnum;
+import com.jiangtao.chuandao.module.system.enums.permission.RoleTypeEnum;
+import com.jiangtao.chuandao.module.system.mq.producer.permission.RoleProducer;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Lazy;
@@ -35,8 +35,9 @@ import javax.annotation.Resource;
 import java.util.*;
 import java.util.stream.Collectors;
 
-import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
-import static cn.iocoder.yudao.module.system.enums.ErrorCodeConstants.*;
+import static com.jiangtao.chuandao.framework.common.exception.util.ServiceExceptionUtil.*;
+import static com.jiangtao.chuandao.module.system.enums.ErrorCodeConstants.*;
+
 
 /**
  * 角色 Service 实现类

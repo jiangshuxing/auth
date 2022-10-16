@@ -1,6 +1,6 @@
 package com.jiangtao.chuandao.module.system.controller.admin.auth.vo;
 
-import cn.iocoder.yudao.framework.common.validation.Mobile;
+import com.jiangtao.chuandao.framework.common.validation.Mobile;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.AllArgsConstructor;

@@ -3,17 +3,17 @@ package com.jiangtao.chuandao.module.system.service.oauth2;
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.util.IdUtil;
 import cn.hutool.core.util.ObjectUtil;
-import cn.iocoder.yudao.framework.common.exception.enums.GlobalErrorCodeConstants;
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.common.util.date.DateUtils;
-import cn.iocoder.yudao.framework.tenant.core.context.TenantContextHolder;
-import cn.iocoder.yudao.module.system.controller.admin.oauth2.vo.token.OAuth2AccessTokenPageReqVO;
-import cn.iocoder.yudao.module.system.dal.dataobject.oauth2.OAuth2AccessTokenDO;
-import cn.iocoder.yudao.module.system.dal.dataobject.oauth2.OAuth2ClientDO;
-import cn.iocoder.yudao.module.system.dal.dataobject.oauth2.OAuth2RefreshTokenDO;
-import cn.iocoder.yudao.module.system.dal.mysql.oauth2.OAuth2AccessTokenMapper;
-import cn.iocoder.yudao.module.system.dal.mysql.oauth2.OAuth2RefreshTokenMapper;
-import cn.iocoder.yudao.module.system.dal.redis.oauth2.OAuth2AccessTokenRedisDAO;
+import com.jiangtao.chuandao.framework.common.exception.enums.GlobalErrorCodeConstants;
+import com.jiangtao.chuandao.framework.common.pojo.PageResult;
+import com.jiangtao.chuandao.framework.common.util.date.DateUtils;
+import com.jiangtao.chuandao.framework.tenant.core.context.TenantContextHolder;
+import com.jiangtao.chuandao.module.system.controller.admin.oauth2.vo.token.OAuth2AccessTokenPageReqVO;
+import com.jiangtao.chuandao.module.system.dal.dataobject.oauth2.OAuth2AccessTokenDO;
+import com.jiangtao.chuandao.module.system.dal.dataobject.oauth2.OAuth2ClientDO;
+import com.jiangtao.chuandao.module.system.dal.dataobject.oauth2.OAuth2RefreshTokenDO;
+import com.jiangtao.chuandao.module.system.dal.mysql.oauth2.OAuth2AccessTokenMapper;
+import com.jiangtao.chuandao.module.system.dal.mysql.oauth2.OAuth2RefreshTokenMapper;
+import com.jiangtao.chuandao.module.system.dal.redis.oauth2.OAuth2AccessTokenRedisDAO;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -21,8 +21,9 @@ import javax.annotation.Resource;
 import java.util.Calendar;
 import java.util.List;
 
-import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception0;
-import static cn.iocoder.yudao.framework.common.util.collection.CollectionUtils.convertSet;
+import static com.jiangtao.chuandao.framework.common.exception.util.ServiceExceptionUtil.exception0;
+import static com.jiangtao.chuandao.framework.common.util.collection.CollectionUtils.convertSet;
+
 
 /**
  * OAuth2.0 Token Service 实现类

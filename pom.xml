@@ -13,8 +13,6 @@
         <module>chuandao-server</module>
         <module>chuandao-module-system</module>
         <module>chuandao-module-infra</module>
-
-
     </modules>
     <packaging>pom</packaging>
     <name>${project.artifactId}</name>
@@ -26,6 +24,8 @@
         <revision>1.0-snapshot</revision>
         <!-- Maven 相关 -->
         <java.version>1.8</java.version>
+        <justAuth.version>1.16.5</justAuth.version>
+        <justAuth.spring.version>1.4.0</justAuth.spring.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <maven-surefire-plugin.version>3.0.0-M5</maven-surefire-plugin.version>
@@ -35,6 +35,8 @@
         <mapstruct.version>1.4.1.Final</mapstruct.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+
 
     <dependencyManagement>
         <dependencies>

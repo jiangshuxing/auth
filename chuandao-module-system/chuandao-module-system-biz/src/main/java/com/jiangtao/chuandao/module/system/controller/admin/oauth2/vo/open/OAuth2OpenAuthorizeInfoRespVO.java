@@ -1,6 +1,6 @@
 package com.jiangtao.chuandao.module.system.controller.admin.oauth2.vo.open;
 
-import cn.iocoder.yudao.framework.common.core.KeyValue;
+import com.jiangtao.chuandao.framework.common.core.KeyValue;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.AllArgsConstructor;

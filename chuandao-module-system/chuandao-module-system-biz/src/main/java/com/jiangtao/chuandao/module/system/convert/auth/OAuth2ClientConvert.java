@@ -1,10 +1,10 @@
 package com.jiangtao.chuandao.module.system.convert.auth;
 
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.module.system.controller.admin.oauth2.vo.client.OAuth2ClientCreateReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.oauth2.vo.client.OAuth2ClientRespVO;
-import cn.iocoder.yudao.module.system.controller.admin.oauth2.vo.client.OAuth2ClientUpdateReqVO;
-import cn.iocoder.yudao.module.system.dal.dataobject.oauth2.OAuth2ClientDO;
+import com.jiangtao.chuandao.framework.common.pojo.PageResult;
+import com.jiangtao.chuandao.module.system.controller.admin.oauth2.vo.client.OAuth2ClientCreateReqVO;
+import com.jiangtao.chuandao.module.system.controller.admin.oauth2.vo.client.OAuth2ClientRespVO;
+import com.jiangtao.chuandao.module.system.controller.admin.oauth2.vo.client.OAuth2ClientUpdateReqVO;
+import com.jiangtao.chuandao.module.system.dal.dataobject.oauth2.OAuth2ClientDO;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 

@@ -2,11 +2,11 @@ package com.jiangtao.chuandao.module.system.service.oauth2;
 
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.lang.Assert;
-import cn.iocoder.yudao.framework.common.util.date.DateUtils;
-import cn.iocoder.yudao.module.system.dal.dataobject.oauth2.OAuth2ApproveDO;
-import cn.iocoder.yudao.module.system.dal.dataobject.oauth2.OAuth2ClientDO;
-import cn.iocoder.yudao.module.system.dal.mysql.oauth2.OAuth2ApproveMapper;
 import com.google.common.annotations.VisibleForTesting;
+import com.jiangtao.chuandao.framework.common.util.date.DateUtils;
+import com.jiangtao.chuandao.module.system.dal.dataobject.oauth2.OAuth2ApproveDO;
+import com.jiangtao.chuandao.module.system.dal.dataobject.oauth2.OAuth2ClientDO;
+import com.jiangtao.chuandao.module.system.dal.mysql.oauth2.OAuth2ApproveMapper;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.validation.annotation.Validated;
@@ -14,7 +14,8 @@ import org.springframework.validation.annotation.Validated;
 import javax.annotation.Resource;
 import java.util.*;
 
-import static cn.iocoder.yudao.framework.common.util.collection.CollectionUtils.convertSet;
+import static com.jiangtao.chuandao.framework.common.util.collection.CollectionUtils.convertSet;
+
 
 /**
  * OAuth2 批准 Service 实现类

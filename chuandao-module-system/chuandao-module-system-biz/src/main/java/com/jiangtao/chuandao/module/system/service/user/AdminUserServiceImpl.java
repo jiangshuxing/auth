@@ -9,7 +9,7 @@ import com.jiangtao.chuandao.framework.common.enums.CommonStatusEnum;
 import com.jiangtao.chuandao.framework.common.exception.ServiceException;
 import com.jiangtao.chuandao.framework.common.pojo.PageResult;
 import com.jiangtao.chuandao.framework.common.util.collection.CollectionUtils;
-import com.jiangtao.chuandao.module.infra.file.FileApi;
+import com.jiangtao.chuandao.module.infra.api.file.FileApi;
 import com.jiangtao.chuandao.module.system.controller.admin.user.vo.profile.UserProfileUpdatePasswordReqVO;
 import com.jiangtao.chuandao.module.system.controller.admin.user.vo.profile.UserProfileUpdateReqVO;
 import com.jiangtao.chuandao.module.system.controller.admin.user.vo.user.*;
@@ -48,7 +48,7 @@ import static com.jiangtao.chuandao.module.system.enums.ErrorCodeConstants.*;
 @Slf4j
 public class AdminUserServiceImpl implements AdminUserService {
 
-    @Value("${sys.user.init-password:yudaoyuanma}")
+    @Value("${sys.user.init-password:chuandaoyuanma}")
     private String userInitPassword;
 
     @Resource

@@ -1,18 +1,18 @@
 package com.jiangtao.chuandao.module.system.service.errorcode;
 
 import cn.hutool.core.collection.CollUtil;
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.module.system.api.errorcode.dto.ErrorCodeAutoGenerateReqDTO;
-import cn.iocoder.yudao.module.system.api.errorcode.dto.ErrorCodeRespDTO;
-import cn.iocoder.yudao.module.system.controller.admin.errorcode.vo.ErrorCodeCreateReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.errorcode.vo.ErrorCodeExportReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.errorcode.vo.ErrorCodePageReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.errorcode.vo.ErrorCodeUpdateReqVO;
-import cn.iocoder.yudao.module.system.convert.errorcode.ErrorCodeConvert;
-import cn.iocoder.yudao.module.system.dal.dataobject.errorcode.ErrorCodeDO;
-import cn.iocoder.yudao.module.system.dal.mysql.errorcode.ErrorCodeMapper;
-import cn.iocoder.yudao.module.system.enums.errorcode.ErrorCodeTypeEnum;
 import com.google.common.annotations.VisibleForTesting;
+import com.jiangtao.chuandao.framework.common.pojo.PageResult;
+import com.jiangtao.chuandao.module.system.api.errorcode.dto.ErrorCodeAutoGenerateReqDTO;
+import com.jiangtao.chuandao.module.system.api.errorcode.dto.ErrorCodeRespDTO;
+import com.jiangtao.chuandao.module.system.controller.admin.errorcode.vo.ErrorCodeCreateReqVO;
+import com.jiangtao.chuandao.module.system.controller.admin.errorcode.vo.ErrorCodeExportReqVO;
+import com.jiangtao.chuandao.module.system.controller.admin.errorcode.vo.ErrorCodePageReqVO;
+import com.jiangtao.chuandao.module.system.controller.admin.errorcode.vo.ErrorCodeUpdateReqVO;
+import com.jiangtao.chuandao.module.system.convert.errorcode.ErrorCodeConvert;
+import com.jiangtao.chuandao.module.system.dal.dataobject.errorcode.ErrorCodeDO;
+import com.jiangtao.chuandao.module.system.dal.mysql.errorcode.ErrorCodeMapper;
+import com.jiangtao.chuandao.module.system.enums.errorcode.ErrorCodeTypeEnum;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -23,11 +23,11 @@ import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
-import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
-import static cn.iocoder.yudao.framework.common.util.collection.CollectionUtils.convertMap;
-import static cn.iocoder.yudao.framework.common.util.collection.CollectionUtils.convertSet;
-import static cn.iocoder.yudao.module.system.enums.ErrorCodeConstants.ERROR_CODE_DUPLICATE;
-import static cn.iocoder.yudao.module.system.enums.ErrorCodeConstants.ERROR_CODE_NOT_EXISTS;
+import static com.jiangtao.chuandao.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static com.jiangtao.chuandao.framework.common.util.collection.CollectionUtils.convertMap;
+import static com.jiangtao.chuandao.framework.common.util.collection.CollectionUtils.convertSet;
+import static com.jiangtao.chuandao.module.system.enums.ErrorCodeConstants.ERROR_CODE_DUPLICATE;
+import static com.jiangtao.chuandao.module.system.enums.ErrorCodeConstants.ERROR_CODE_NOT_EXISTS;
 
 /**
  * 错误码 Service 实现类

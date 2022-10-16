@@ -1,11 +1,11 @@
 package com.jiangtao.chuandao.module.system.convert.sms;
 
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.module.system.controller.admin.sms.vo.template.SmsTemplateCreateReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.sms.vo.template.SmsTemplateExcelVO;
-import cn.iocoder.yudao.module.system.controller.admin.sms.vo.template.SmsTemplateRespVO;
-import cn.iocoder.yudao.module.system.controller.admin.sms.vo.template.SmsTemplateUpdateReqVO;
-import cn.iocoder.yudao.module.system.dal.dataobject.sms.SmsTemplateDO;
+import com.jiangtao.chuandao.framework.common.pojo.PageResult;
+import com.jiangtao.chuandao.module.system.controller.admin.sms.vo.template.SmsTemplateCreateReqVO;
+import com.jiangtao.chuandao.module.system.controller.admin.sms.vo.template.SmsTemplateExcelVO;
+import com.jiangtao.chuandao.module.system.controller.admin.sms.vo.template.SmsTemplateRespVO;
+import com.jiangtao.chuandao.module.system.controller.admin.sms.vo.template.SmsTemplateUpdateReqVO;
+import com.jiangtao.chuandao.module.system.dal.dataobject.sms.SmsTemplateDO;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 

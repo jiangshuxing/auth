@@ -1,6 +1,7 @@
 package com.jiangtao.chuandao.module.system.service.oauth2;
 
-import cn.iocoder.yudao.module.system.dal.dataobject.oauth2.OAuth2AccessTokenDO;
+
+import com.jiangtao.chuandao.module.system.dal.dataobject.oauth2.OAuth2AccessTokenDO;
 
 import java.util.List;
 

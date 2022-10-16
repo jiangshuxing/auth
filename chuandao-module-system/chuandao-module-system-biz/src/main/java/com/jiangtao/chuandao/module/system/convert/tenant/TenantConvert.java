@@ -1,12 +1,12 @@
 package com.jiangtao.chuandao.module.system.convert.tenant;
 
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.module.system.controller.admin.tenant.vo.tenant.TenantCreateReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.tenant.vo.tenant.TenantExcelVO;
-import cn.iocoder.yudao.module.system.controller.admin.tenant.vo.tenant.TenantRespVO;
-import cn.iocoder.yudao.module.system.controller.admin.tenant.vo.tenant.TenantUpdateReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.user.vo.user.UserCreateReqVO;
-import cn.iocoder.yudao.module.system.dal.dataobject.tenant.TenantDO;
+import com.jiangtao.chuandao.framework.common.pojo.PageResult;
+import com.jiangtao.chuandao.module.system.controller.admin.tenant.vo.tenant.TenantCreateReqVO;
+import com.jiangtao.chuandao.module.system.controller.admin.tenant.vo.tenant.TenantExcelVO;
+import com.jiangtao.chuandao.module.system.controller.admin.tenant.vo.tenant.TenantRespVO;
+import com.jiangtao.chuandao.module.system.controller.admin.tenant.vo.tenant.TenantUpdateReqVO;
+import com.jiangtao.chuandao.module.system.controller.admin.user.vo.user.UserCreateReqVO;
+import com.jiangtao.chuandao.module.system.dal.dataobject.tenant.TenantDO;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 

@@ -1,21 +1,21 @@
 package com.jiangtao.chuandao.module.system.service.dept;
 
 import cn.hutool.core.collection.CollUtil;
-import cn.iocoder.yudao.framework.common.enums.CommonStatusEnum;
-import cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil;
-import cn.iocoder.yudao.framework.common.util.collection.CollectionUtils;
-import cn.iocoder.yudao.framework.tenant.core.aop.TenantIgnore;
-import cn.iocoder.yudao.module.system.controller.admin.dept.vo.dept.DeptCreateReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.dept.vo.dept.DeptListReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.dept.vo.dept.DeptUpdateReqVO;
-import cn.iocoder.yudao.module.system.convert.dept.DeptConvert;
-import cn.iocoder.yudao.module.system.dal.dataobject.dept.DeptDO;
-import cn.iocoder.yudao.module.system.dal.mysql.dept.DeptMapper;
-import cn.iocoder.yudao.module.system.enums.dept.DeptIdEnum;
-import cn.iocoder.yudao.module.system.mq.producer.dept.DeptProducer;
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
+import com.jiangtao.chuandao.framework.common.enums.CommonStatusEnum;
+import com.jiangtao.chuandao.framework.common.exception.util.ServiceExceptionUtil;
+import com.jiangtao.chuandao.framework.common.util.collection.CollectionUtils;
+import com.jiangtao.chuandao.framework.tenant.core.aop.TenantIgnore;
+import com.jiangtao.chuandao.module.system.controller.admin.dept.vo.dept.DeptCreateReqVO;
+import com.jiangtao.chuandao.module.system.controller.admin.dept.vo.dept.DeptListReqVO;
+import com.jiangtao.chuandao.module.system.controller.admin.dept.vo.dept.DeptUpdateReqVO;
+import com.jiangtao.chuandao.module.system.convert.dept.DeptConvert;
+import com.jiangtao.chuandao.module.system.dal.dataobject.dept.DeptDO;
+import com.jiangtao.chuandao.module.system.dal.mysql.dept.DeptMapper;
+import com.jiangtao.chuandao.module.system.enums.dept.DeptIdEnum;
+import com.jiangtao.chuandao.module.system.mq.producer.dept.DeptProducer;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.scheduling.annotation.Scheduled;
@@ -26,8 +26,8 @@ import javax.annotation.PostConstruct;
 import javax.annotation.Resource;
 import java.util.*;
 
-import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
-import static cn.iocoder.yudao.module.system.enums.ErrorCodeConstants.*;
+import static com.jiangtao.chuandao.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static com.jiangtao.chuandao.module.system.enums.ErrorCodeConstants.*;
 
 /**
  * 部门 Service 实现类
@@ -161,7 +161,7 @@ public class DeptServiceImpl implements DeptService {
         checkDeptExists(id);
         // 校验是否有子部门
         if (deptMapper.selectCountByParentId(id) > 0) {
-            throw ServiceExceptionUtil.exception(DEPT_EXITS_CHILDREN);
+            throw exception(DEPT_EXITS_CHILDREN);
         }
         // 删除部门
         deptMapper.deleteById(id);
@@ -227,21 +227,21 @@ public class DeptServiceImpl implements DeptService {
         }
         // 不能设置自己为父部门
         if (parentId.equals(id)) {
-            throw ServiceExceptionUtil.exception(DEPT_PARENT_ERROR);
+            throw exception(DEPT_PARENT_ERROR);
         }
         // 父岗位不存在
         DeptDO dept = deptMapper.selectById(parentId);
         if (dept == null) {
-            throw ServiceExceptionUtil.exception(DEPT_PARENT_NOT_EXITS);
+            throw exception(DEPT_PARENT_NOT_EXITS);
         }
         // 父部门被禁用
         if (!CommonStatusEnum.ENABLE.getStatus().equals(dept.getStatus())) {
-            throw ServiceExceptionUtil.exception(DEPT_NOT_ENABLE);
+            throw exception(DEPT_NOT_ENABLE);
         }
         // 父部门不能是原来的子部门
         List<DeptDO> children = this.getDeptsByParentIdFromCache(id, true);
         if (children.stream().anyMatch(dept1 -> dept1.getId().equals(parentId))) {
-            throw ServiceExceptionUtil.exception(DEPT_PARENT_IS_CHILD);
+            throw exception(DEPT_PARENT_IS_CHILD);
         }
     }
 
@@ -251,7 +251,7 @@ public class DeptServiceImpl implements DeptService {
         }
         DeptDO dept = deptMapper.selectById(id);
         if (dept == null) {
-            throw ServiceExceptionUtil.exception(DEPT_NOT_FOUND);
+            throw exception(DEPT_NOT_FOUND);
         }
     }
 
@@ -262,10 +262,10 @@ public class DeptServiceImpl implements DeptService {
         }
         // 如果 id 为空，说明不用比较是否为相同 id 的岗位
         if (id == null) {
-            throw ServiceExceptionUtil.exception(DEPT_NAME_DUPLICATE);
+            throw exception(DEPT_NAME_DUPLICATE);
         }
         if (!menu.getId().equals(id)) {
-            throw ServiceExceptionUtil.exception(DEPT_NAME_DUPLICATE);
+            throw exception(DEPT_NAME_DUPLICATE);
         }
     }
 

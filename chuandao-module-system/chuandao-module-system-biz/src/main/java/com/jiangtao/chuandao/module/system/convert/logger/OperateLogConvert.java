@@ -1,12 +1,12 @@
 package com.jiangtao.chuandao.module.system.convert.logger;
 
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.common.util.collection.MapUtils;
-import cn.iocoder.yudao.module.system.api.logger.dto.OperateLogCreateReqDTO;
-import cn.iocoder.yudao.module.system.controller.admin.logger.vo.operatelog.OperateLogExcelVO;
-import cn.iocoder.yudao.module.system.controller.admin.logger.vo.operatelog.OperateLogRespVO;
-import cn.iocoder.yudao.module.system.dal.dataobject.logger.OperateLogDO;
-import cn.iocoder.yudao.module.system.dal.dataobject.user.AdminUserDO;
+import com.jiangtao.chuandao.framework.common.pojo.PageResult;
+import com.jiangtao.chuandao.framework.common.util.collection.MapUtils;
+import com.jiangtao.chuandao.module.system.api.logger.dto.OperateLogCreateReqDTO;
+import com.jiangtao.chuandao.module.system.controller.admin.logger.vo.operatelog.OperateLogExcelVO;
+import com.jiangtao.chuandao.module.system.controller.admin.logger.vo.operatelog.OperateLogRespVO;
+import com.jiangtao.chuandao.module.system.dal.dataobject.logger.OperateLogDO;
+import com.jiangtao.chuandao.module.system.dal.dataobject.user.AdminUserDO;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
@@ -14,7 +14,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-import static cn.iocoder.yudao.framework.common.exception.enums.GlobalErrorCodeConstants.SUCCESS;
+import static com.jiangtao.chuandao.framework.common.exception.enums.GlobalErrorCodeConstants.SUCCESS;
+
 
 @Mapper
 public interface OperateLogConvert {

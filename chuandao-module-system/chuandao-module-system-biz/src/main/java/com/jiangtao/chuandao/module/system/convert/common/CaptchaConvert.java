@@ -1,7 +1,7 @@
 package com.jiangtao.chuandao.module.system.convert.common;
 
 import cn.hutool.captcha.AbstractCaptcha;
-import cn.iocoder.yudao.module.system.controller.admin.common.vo.CaptchaImageRespVO;
+import com.jiangtao.chuandao.module.system.controller.admin.common.vo.CaptchaImageRespVO;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 

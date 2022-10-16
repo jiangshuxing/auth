@@ -8,6 +8,7 @@ import com.jiangtao.chuandao.module.system.enums.errorcode.ErrorCodeTypeEnum;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
+import lombok.experimental.Accessors;
 
 /**
  * 错误码表
@@ -19,6 +20,7 @@ import lombok.ToString;
 @Data
 @EqualsAndHashCode(callSuper = true)
 @ToString(callSuper = true)
+@Accessors(chain = true)
 public class ErrorCodeDO extends BaseDO {
 
     /**

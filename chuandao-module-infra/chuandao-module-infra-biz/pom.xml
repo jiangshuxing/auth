@@ -74,11 +74,12 @@
 <!--            <artifactId>yudao-spring-boot-starter-job</artifactId>-->
 <!--        </dependency>-->
 
-        <!-- 消息队列相关 -->
-<!--        <dependency>-->
-<!--            <groupId>cn.iocoder.boot</groupId>-->
-<!--            <artifactId>yudao-spring-boot-starter-mq</artifactId>-->
-<!--        </dependency>-->
+<!--         消息队列相关-->
+        <dependency>
+            <groupId>com.jiangtao</groupId>
+            <artifactId>chuandao-spring-boot-starter-mq</artifactId>
+            <version>${revision}</version>
+        </dependency>
 
         <!-- Test 测试相关 -->
 <!--        <dependency>-->
@@ -120,10 +121,11 @@
         </dependency>
 
         <!-- 三方云服务相关 -->
-<!--        <dependency>-->
-<!--            <groupId>cn.iocoder.boot</groupId>-->
-<!--            <artifactId>yudao-spring-boot-starter-file</artifactId>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>com.jiangtao</groupId>
+            <artifactId>chuandao-spring-boot-starter-file</artifactId>
+            <version>${revision}</version>
+        </dependency>
     </dependencies>
 
 </project>

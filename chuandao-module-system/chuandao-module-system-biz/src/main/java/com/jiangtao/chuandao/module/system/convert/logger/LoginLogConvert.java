@@ -1,10 +1,10 @@
 package com.jiangtao.chuandao.module.system.convert.logger;
 
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.module.system.api.logger.dto.LoginLogCreateReqDTO;
-import cn.iocoder.yudao.module.system.controller.admin.logger.vo.loginlog.LoginLogExcelVO;
-import cn.iocoder.yudao.module.system.controller.admin.logger.vo.loginlog.LoginLogRespVO;
-import cn.iocoder.yudao.module.system.dal.dataobject.logger.LoginLogDO;
+import com.jiangtao.chuandao.framework.common.pojo.PageResult;
+import com.jiangtao.chuandao.module.system.api.logger.dto.LoginLogCreateReqDTO;
+import com.jiangtao.chuandao.module.system.controller.admin.logger.vo.loginlog.LoginLogExcelVO;
+import com.jiangtao.chuandao.module.system.controller.admin.logger.vo.loginlog.LoginLogRespVO;
+import com.jiangtao.chuandao.module.system.dal.dataobject.logger.LoginLogDO;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 

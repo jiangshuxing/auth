@@ -9,6 +9,7 @@ import com.jiangtao.chuandao.framework.common.enums.UserTypeEnum;
 import com.jiangtao.chuandao.framework.tenant.core.db.TenantBaseDO;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.experimental.Accessors;
 
 import java.util.Date;
 import java.util.List;
@@ -24,6 +25,7 @@ import java.util.List;
 @TableName(value = "system_oauth2_access_token", autoResultMap = true)
 @KeySequence("system_oauth2_access_token_seq") // 用于 Oracle、PostgreSQL、Kingbase、DB2、H2 数据库的主键自增。如果是 MySQL 等数据库，可不写。
 @Data
+@Accessors(chain = true)
 @EqualsAndHashCode(callSuper = true)
 public class OAuth2AccessTokenDO extends TenantBaseDO {
 

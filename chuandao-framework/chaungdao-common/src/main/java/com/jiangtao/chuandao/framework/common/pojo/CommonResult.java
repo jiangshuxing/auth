@@ -6,6 +6,7 @@ import com.jiangtao.chuandao.framework.common.exception.ServerException;
 import com.jiangtao.chuandao.framework.common.exception.ServiceException;
 import com.jiangtao.chuandao.framework.common.exception.enums.GlobalErrorCodeConstants;
 import lombok.Data;
+import lombok.experimental.Accessors;
 import org.springframework.util.Assert;
 
 import java.io.Serializable;
@@ -17,6 +18,7 @@ import java.util.Objects;
  * @param <T> 数据泛型
  */
 @Data
+@Accessors(chain = true)
 public class CommonResult<T> implements Serializable {
 
     /**

@@ -1,23 +1,23 @@
 package com.jiangtao.chuandao.module.system.controller.admin.auth;
 
 import cn.hutool.core.util.StrUtil;
-import cn.iocoder.yudao.framework.common.enums.CommonStatusEnum;
-import cn.iocoder.yudao.framework.common.pojo.CommonResult;
-import cn.iocoder.yudao.framework.common.util.collection.SetUtils;
+import com.jiangtao.chuandao.framework.common.enums.CommonStatusEnum;
+import com.jiangtao.chuandao.framework.common.pojo.CommonResult;
+import com.jiangtao.chuandao.framework.common.util.collection.SetUtils;
 import com.jiangtao.chuandao.framework.operatelog.core.annotations.OperateLog;
-import cn.iocoder.yudao.framework.security.config.SecurityProperties;
-import cn.iocoder.yudao.module.system.controller.admin.auth.vo.*;
-import cn.iocoder.yudao.module.system.convert.auth.AuthConvert;
-import cn.iocoder.yudao.module.system.dal.dataobject.permission.MenuDO;
-import cn.iocoder.yudao.module.system.dal.dataobject.permission.RoleDO;
-import cn.iocoder.yudao.module.system.dal.dataobject.user.AdminUserDO;
-import cn.iocoder.yudao.module.system.enums.logger.LoginLogTypeEnum;
-import cn.iocoder.yudao.module.system.enums.permission.MenuTypeEnum;
-import cn.iocoder.yudao.module.system.service.auth.AdminAuthService;
-import cn.iocoder.yudao.module.system.service.permission.PermissionService;
-import cn.iocoder.yudao.module.system.service.permission.RoleService;
-import cn.iocoder.yudao.module.system.service.social.SocialUserService;
-import cn.iocoder.yudao.module.system.service.user.AdminUserService;
+import com.jiangtao.chuandao.framework.security.config.SecurityProperties;
+import com.jiangtao.chuandao.module.system.controller.admin.auth.vo.*;
+import com.jiangtao.chuandao.module.system.convert.auth.AuthConvert;
+import com.jiangtao.chuandao.module.system.dal.dataobject.permission.MenuDO;
+import com.jiangtao.chuandao.module.system.dal.dataobject.permission.RoleDO;
+import com.jiangtao.chuandao.module.system.dal.dataobject.user.AdminUserDO;
+import com.jiangtao.chuandao.module.system.enums.logger.LoginLogTypeEnum;
+import com.jiangtao.chuandao.module.system.enums.permission.MenuTypeEnum;
+import com.jiangtao.chuandao.module.system.service.auth.AdminAuthService;
+import com.jiangtao.chuandao.module.system.service.permission.PermissionService;
+import com.jiangtao.chuandao.module.system.service.permission.RoleService;
+import com.jiangtao.chuandao.module.system.service.social.SocialUserService;
+import com.jiangtao.chuandao.module.system.service.user.AdminUserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
@@ -33,9 +33,9 @@ import javax.validation.Valid;
 import java.util.List;
 import java.util.Set;
 
-import static cn.iocoder.yudao.framework.common.pojo.CommonResult.success;
-import static cn.iocoder.yudao.framework.security.core.util.SecurityFrameworkUtils.getLoginUserId;
-import static cn.iocoder.yudao.framework.security.core.util.SecurityFrameworkUtils.obtainAuthorization;
+import static com.jiangtao.chuandao.framework.common.pojo.CommonResult.*;
+import static com.jiangtao.chuandao.framework.security.core.util.SecurityFrameworkUtils.getLoginUserId;
+import static com.jiangtao.chuandao.framework.security.core.util.SecurityFrameworkUtils.obtainAuthorization;
 import static java.util.Collections.singleton;
 
 @Api(tags = "管理后台 - 认证")
@@ -150,7 +150,7 @@ public class AuthController {
     })
     public CommonResult<String> socialLogin(@RequestParam("type") Integer type,
                                                     @RequestParam("redirectUri") String redirectUri) {
-        return CommonResult.success(socialUserService.getAuthorizeUrl(type, redirectUri));
+        return success(socialUserService.getAuthorizeUrl(type, redirectUri));
     }
 
     @PostMapping("/social-login")

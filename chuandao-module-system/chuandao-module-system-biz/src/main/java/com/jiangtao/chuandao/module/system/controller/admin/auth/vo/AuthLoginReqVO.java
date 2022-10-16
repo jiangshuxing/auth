@@ -1,8 +1,8 @@
 package com.jiangtao.chuandao.module.system.controller.admin.auth.vo;
 
 import cn.hutool.core.util.StrUtil;
-import cn.iocoder.yudao.framework.common.validation.InEnum;
-import cn.iocoder.yudao.module.system.enums.social.SocialTypeEnum;
+import com.jiangtao.chuandao.framework.common.validation.InEnum;
+import com.jiangtao.chuandao.module.system.enums.social.SocialTypeEnum;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.AllArgsConstructor;
@@ -22,7 +22,7 @@ import javax.validation.constraints.Pattern;
 @Builder
 public class AuthLoginReqVO {
 
-    @ApiModelProperty(value = "账号", required = true, example = "yudaoyuanma")
+    @ApiModelProperty(value = "账号", required = true, example = "chuandaoyuanma")
     @NotEmpty(message = "登录账号不能为空")
     @Length(min = 4, max = 16, message = "账号长度为 4-16 位")
     @Pattern(regexp = "^[A-Za-z0-9]+$", message = "账号格式为数字以及字母")

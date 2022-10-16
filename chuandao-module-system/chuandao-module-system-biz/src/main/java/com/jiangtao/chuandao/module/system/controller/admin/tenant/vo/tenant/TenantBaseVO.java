@@ -2,6 +2,7 @@ package com.jiangtao.chuandao.module.system.controller.admin.tenant.vo.tenant;
 
 import lombok.*;
 import io.swagger.annotations.*;
+import lombok.experimental.Accessors;
 import org.hibernate.validator.constraints.URL;
 
 import javax.validation.constraints.*;
@@ -12,6 +13,7 @@ import java.util.Date;
 * 如果子 VO 存在差异的字段，请不要添加到这里，影响 Swagger 文档生成
 */
 @Data
+@Accessors(chain = true)
 public class TenantBaseVO {
 
     @ApiModelProperty(value = "租户名", required = true, example = "芋道")

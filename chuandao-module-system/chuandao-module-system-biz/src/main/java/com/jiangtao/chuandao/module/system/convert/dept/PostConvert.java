@@ -1,8 +1,8 @@
 package com.jiangtao.chuandao.module.system.convert.dept;
 
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.module.system.controller.admin.dept.vo.post.*;
-import cn.iocoder.yudao.module.system.dal.dataobject.dept.PostDO;
+import com.jiangtao.chuandao.framework.common.pojo.PageResult;
+import com.jiangtao.chuandao.module.system.controller.admin.dept.vo.post.*;
+import com.jiangtao.chuandao.module.system.dal.dataobject.dept.PostDO;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 

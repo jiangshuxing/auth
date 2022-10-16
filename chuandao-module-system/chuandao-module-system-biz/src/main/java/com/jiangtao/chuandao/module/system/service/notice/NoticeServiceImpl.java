@@ -1,19 +1,20 @@
 package com.jiangtao.chuandao.module.system.service.notice;
 
-import cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil;
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.module.system.controller.admin.notice.vo.NoticeCreateReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.notice.vo.NoticePageReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.notice.vo.NoticeUpdateReqVO;
-import cn.iocoder.yudao.module.system.convert.notice.NoticeConvert;
-import cn.iocoder.yudao.module.system.dal.dataobject.notice.NoticeDO;
-import cn.iocoder.yudao.module.system.dal.mysql.notice.NoticeMapper;
 import com.google.common.annotations.VisibleForTesting;
+import com.jiangtao.chuandao.framework.common.exception.util.ServiceExceptionUtil;
+import com.jiangtao.chuandao.framework.common.pojo.PageResult;
+import com.jiangtao.chuandao.module.system.controller.admin.notice.vo.NoticeCreateReqVO;
+import com.jiangtao.chuandao.module.system.controller.admin.notice.vo.NoticePageReqVO;
+import com.jiangtao.chuandao.module.system.controller.admin.notice.vo.NoticeUpdateReqVO;
+import com.jiangtao.chuandao.module.system.convert.notice.NoticeConvert;
+import com.jiangtao.chuandao.module.system.dal.dataobject.notice.NoticeDO;
+import com.jiangtao.chuandao.module.system.dal.mysql.notice.NoticeMapper;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 
-import static cn.iocoder.yudao.module.system.enums.ErrorCodeConstants.NOTICE_NOT_FOUND;
+import static com.jiangtao.chuandao.module.system.enums.ErrorCodeConstants.NOTICE_NOT_FOUND;
+
 
 /**
  * 通知公告 Service 实现类

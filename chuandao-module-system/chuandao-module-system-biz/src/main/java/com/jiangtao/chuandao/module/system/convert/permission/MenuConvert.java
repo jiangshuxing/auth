@@ -1,10 +1,10 @@
 package com.jiangtao.chuandao.module.system.convert.permission;
 
-import cn.iocoder.yudao.module.system.controller.admin.permission.vo.menu.MenuCreateReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.permission.vo.menu.MenuRespVO;
-import cn.iocoder.yudao.module.system.controller.admin.permission.vo.menu.MenuSimpleRespVO;
-import cn.iocoder.yudao.module.system.controller.admin.permission.vo.menu.MenuUpdateReqVO;
-import cn.iocoder.yudao.module.system.dal.dataobject.permission.MenuDO;
+import com.jiangtao.chuandao.module.system.controller.admin.permission.vo.menu.MenuCreateReqVO;
+import com.jiangtao.chuandao.module.system.controller.admin.permission.vo.menu.MenuRespVO;
+import com.jiangtao.chuandao.module.system.controller.admin.permission.vo.menu.MenuSimpleRespVO;
+import com.jiangtao.chuandao.module.system.controller.admin.permission.vo.menu.MenuUpdateReqVO;
+import com.jiangtao.chuandao.module.system.dal.dataobject.permission.MenuDO;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 

@@ -1,7 +1,7 @@
 package com.jiangtao.chuandao.module.system.service.permission;
 
-import cn.iocoder.yudao.module.system.api.permission.dto.DeptDataPermissionRespDTO;
-import cn.iocoder.yudao.module.system.dal.dataobject.permission.MenuDO;
+import com.jiangtao.chuandao.module.system.api.permission.dto.DeptDataPermissionRespDTO;
+import com.jiangtao.chuandao.module.system.dal.dataobject.permission.MenuDO;
 import org.springframework.lang.Nullable;
 
 import java.util.Collection;

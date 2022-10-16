@@ -1,20 +1,20 @@
 package com.jiangtao.chuandao.module.system.service.sensitiveword;
 
 import cn.hutool.core.collection.CollUtil;
-import cn.iocoder.yudao.framework.common.enums.CommonStatusEnum;
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.common.util.collection.CollectionUtils;
-import cn.iocoder.yudao.module.system.controller.admin.sensitiveword.vo.SensitiveWordCreateReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.sensitiveword.vo.SensitiveWordExportReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.sensitiveword.vo.SensitiveWordPageReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.sensitiveword.vo.SensitiveWordUpdateReqVO;
-import cn.iocoder.yudao.module.system.convert.sensitiveword.SensitiveWordConvert;
-import cn.iocoder.yudao.module.system.dal.dataobject.sensitiveword.SensitiveWordDO;
-import cn.iocoder.yudao.module.system.dal.mysql.sensitiveword.SensitiveWordMapper;
-import cn.iocoder.yudao.module.system.mq.producer.sensitiveword.SensitiveWordProducer;
-import cn.iocoder.yudao.module.system.util.collection.SimpleTrie;
 import com.google.common.collect.HashMultimap;
 import com.google.common.collect.Multimap;
+import com.jiangtao.chuandao.framework.common.enums.CommonStatusEnum;
+import com.jiangtao.chuandao.framework.common.pojo.PageResult;
+import com.jiangtao.chuandao.framework.common.util.collection.CollectionUtils;
+import com.jiangtao.chuandao.module.system.controller.admin.sensitiveword.vo.SensitiveWordCreateReqVO;
+import com.jiangtao.chuandao.module.system.controller.admin.sensitiveword.vo.SensitiveWordExportReqVO;
+import com.jiangtao.chuandao.module.system.controller.admin.sensitiveword.vo.SensitiveWordPageReqVO;
+import com.jiangtao.chuandao.module.system.controller.admin.sensitiveword.vo.SensitiveWordUpdateReqVO;
+import com.jiangtao.chuandao.module.system.convert.sensitiveword.SensitiveWordConvert;
+import com.jiangtao.chuandao.module.system.dal.dataobject.sensitiveword.SensitiveWordDO;
+import com.jiangtao.chuandao.module.system.dal.mysql.sensitiveword.SensitiveWordMapper;
+import com.jiangtao.chuandao.module.system.mq.producer.sensitiveword.SensitiveWordProducer;
+import com.jiangtao.chuandao.module.system.util.collection.SimpleTrie;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.scheduling.annotation.Scheduled;
@@ -25,9 +25,9 @@ import javax.annotation.PostConstruct;
 import javax.annotation.Resource;
 import java.util.*;
 
-import static cn.iocoder.yudao.framework.common.exception.util.ServiceExceptionUtil.exception;
-import static cn.iocoder.yudao.module.system.enums.ErrorCodeConstants.SENSITIVE_WORD_EXISTS;
-import static cn.iocoder.yudao.module.system.enums.ErrorCodeConstants.SENSITIVE_WORD_NOT_EXISTS;
+import static com.jiangtao.chuandao.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static com.jiangtao.chuandao.module.system.enums.ErrorCodeConstants.SENSITIVE_WORD_EXISTS;
+import static com.jiangtao.chuandao.module.system.enums.ErrorCodeConstants.SENSITIVE_WORD_NOT_EXISTS;
 
 /**
  * 敏感词 Service 实现类
@@ -213,7 +213,7 @@ public class SensitiveWordServiceImpl implements SensitiveWordService {
     }
 
     @Override
-    public PageResult<SensitiveWordDO> getSensitiveWordPage(SensitiveWordPageReqVO pageReqVO) {
+    public PageResult<SensitiveWordDO>  getSensitiveWordPage(SensitiveWordPageReqVO pageReqVO) {
         return sensitiveWordMapper.selectPage(pageReqVO);
     }
 

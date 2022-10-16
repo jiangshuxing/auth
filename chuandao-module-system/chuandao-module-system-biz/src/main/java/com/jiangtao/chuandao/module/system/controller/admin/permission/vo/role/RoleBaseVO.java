@@ -2,6 +2,7 @@ package com.jiangtao.chuandao.module.system.controller.admin.permission.vo.role;
 
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
+import lombok.experimental.Accessors;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
@@ -12,6 +13,7 @@ import javax.validation.constraints.Size;
  * 如果子 VO 存在差异的字段，请不要添加到这里，影响 Swagger 文档生成
  */
 @Data
+@Accessors(chain = true)
 public class RoleBaseVO {
 
     @ApiModelProperty(value = "角色名称", required = true, example = "管理员")

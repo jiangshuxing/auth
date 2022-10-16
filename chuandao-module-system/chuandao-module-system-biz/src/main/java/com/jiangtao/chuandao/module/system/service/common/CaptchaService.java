@@ -1,6 +1,7 @@
 package com.jiangtao.chuandao.module.system.service.common;
 
-import cn.iocoder.yudao.module.system.controller.admin.common.vo.CaptchaImageRespVO;
+
+import com.jiangtao.chuandao.module.system.controller.admin.common.vo.CaptchaImageRespVO;
 
 /**
  * 验证码 Service 接口

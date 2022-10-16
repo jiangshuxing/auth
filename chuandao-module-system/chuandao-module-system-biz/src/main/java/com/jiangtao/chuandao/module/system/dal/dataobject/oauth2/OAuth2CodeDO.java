@@ -1,13 +1,15 @@
 package com.jiangtao.chuandao.module.system.dal.dataobject.oauth2;
 
-import cn.iocoder.yudao.framework.common.enums.UserTypeEnum;
-import cn.iocoder.yudao.framework.mybatis.core.dataobject.BaseDO;
 import com.baomidou.mybatisplus.annotation.KeySequence;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler;
+import com.jiangtao.chuandao.framework.common.enums.UserTypeEnum;
+import com.jiangtao.chuandao.framework.mybatis.core.dataobject.BaseDO;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.experimental.Accessors;
+import org.springframework.data.annotation.AccessType;
 
 import java.util.Date;
 import java.util.List;
@@ -20,6 +22,7 @@ import java.util.List;
 @TableName(value = "system_oauth2_code", autoResultMap = true)
 @KeySequence("system_oauth2_code_seq") // 用于 Oracle、PostgreSQL、Kingbase、DB2、H2 数据库的主键自增。如果是 MySQL 等数据库，可不写。
 @Data
+@Accessors(chain = true)
 @EqualsAndHashCode(callSuper = true)
 public class OAuth2CodeDO extends BaseDO {
 

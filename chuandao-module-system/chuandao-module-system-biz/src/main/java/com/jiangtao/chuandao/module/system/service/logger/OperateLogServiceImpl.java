@@ -2,16 +2,16 @@ package com.jiangtao.chuandao.module.system.service.logger;
 
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.util.StrUtil;
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.common.util.string.StrUtils;
-import cn.iocoder.yudao.module.system.api.logger.dto.OperateLogCreateReqDTO;
-import cn.iocoder.yudao.module.system.controller.admin.logger.vo.operatelog.OperateLogExportReqVO;
-import cn.iocoder.yudao.module.system.controller.admin.logger.vo.operatelog.OperateLogPageReqVO;
-import cn.iocoder.yudao.module.system.convert.logger.OperateLogConvert;
-import cn.iocoder.yudao.module.system.dal.dataobject.logger.OperateLogDO;
-import cn.iocoder.yudao.module.system.dal.dataobject.user.AdminUserDO;
-import cn.iocoder.yudao.module.system.dal.mysql.logger.OperateLogMapper;
-import cn.iocoder.yudao.module.system.service.user.AdminUserService;
+import com.jiangtao.chuandao.framework.common.pojo.PageResult;
+import com.jiangtao.chuandao.framework.common.util.string.StrUtils;
+import com.jiangtao.chuandao.module.system.api.logger.dto.OperateLogCreateReqDTO;
+import com.jiangtao.chuandao.module.system.controller.admin.logger.vo.operatelog.OperateLogExportReqVO;
+import com.jiangtao.chuandao.module.system.controller.admin.logger.vo.operatelog.OperateLogPageReqVO;
+import com.jiangtao.chuandao.module.system.convert.logger.OperateLogConvert;
+import com.jiangtao.chuandao.module.system.dal.dataobject.logger.OperateLogDO;
+import com.jiangtao.chuandao.module.system.dal.dataobject.user.AdminUserDO;
+import com.jiangtao.chuandao.module.system.dal.mysql.logger.OperateLogMapper;
+import com.jiangtao.chuandao.module.system.service.user.AdminUserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
@@ -21,9 +21,10 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
-import static cn.iocoder.yudao.framework.common.util.collection.CollectionUtils.convertSet;
-import static cn.iocoder.yudao.module.system.dal.dataobject.logger.OperateLogDO.JAVA_METHOD_ARGS_MAX_LENGTH;
-import static cn.iocoder.yudao.module.system.dal.dataobject.logger.OperateLogDO.RESULT_MAX_LENGTH;
+import static com.jiangtao.chuandao.framework.common.util.collection.CollectionUtils.convertSet;
+import static com.jiangtao.chuandao.module.system.dal.dataobject.logger.OperateLogDO.JAVA_METHOD_ARGS_MAX_LENGTH;
+import static com.jiangtao.chuandao.module.system.dal.dataobject.logger.OperateLogDO.RESULT_MAX_LENGTH;
+
 
 @Service
 @Validated

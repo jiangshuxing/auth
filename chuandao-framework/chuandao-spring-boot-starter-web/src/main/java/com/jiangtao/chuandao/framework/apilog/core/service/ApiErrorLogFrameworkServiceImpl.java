@@ -1,8 +1,8 @@
 package com.jiangtao.chuandao.framework.apilog.core.service;
 
 import cn.hutool.core.bean.BeanUtil;
-import com.jiangtao.chuandao.module.infra.logger.ApiErrorLogApi;
-import com.jiangtao.chuandao.module.infra.logger.dto.ApiErrorLogCreateReqDTO;
+import com.jiangtao.chuandao.module.infra.api.logger.ApiErrorLogApi;
+import com.jiangtao.chuandao.module.infra.api.logger.dto.ApiErrorLogCreateReqDTO;
 import lombok.RequiredArgsConstructor;
 import org.springframework.scheduling.annotation.Async;
 
