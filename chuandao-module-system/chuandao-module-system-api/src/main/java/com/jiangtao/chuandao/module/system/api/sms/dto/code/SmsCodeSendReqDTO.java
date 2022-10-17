@@ -4,6 +4,7 @@ import com.jiangtao.chuandao.framework.common.validation.InEnum;
 import com.jiangtao.chuandao.framework.common.validation.Mobile;
 import com.jiangtao.chuandao.module.system.enums.sms.SmsSceneEnum;
 import lombok.Data;
+import lombok.experimental.Accessors;
 
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
@@ -14,6 +15,7 @@ import javax.validation.constraints.NotNull;
  * @author 芋道源码
  */
 @Data
+@Accessors(chain = true)
 public class SmsCodeSendReqDTO {
 
     /**

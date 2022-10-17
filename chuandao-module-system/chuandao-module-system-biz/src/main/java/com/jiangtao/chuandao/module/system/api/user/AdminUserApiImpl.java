@@ -1,9 +1,9 @@
 package com.jiangtao.chuandao.module.system.api.user;
 
-import cn.iocoder.yudao.module.system.api.user.dto.AdminUserRespDTO;
-import cn.iocoder.yudao.module.system.convert.user.UserConvert;
-import cn.iocoder.yudao.module.system.dal.dataobject.user.AdminUserDO;
-import cn.iocoder.yudao.module.system.service.user.AdminUserService;
+import com.jiangtao.chuandao.module.system.api.user.dto.AdminUserRespDTO;
+import com.jiangtao.chuandao.module.system.convert.user.UserConvert;
+import com.jiangtao.chuandao.module.system.dal.dataobject.user.AdminUserDO;
+import com.jiangtao.chuandao.module.system.service.user.AdminUserService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;

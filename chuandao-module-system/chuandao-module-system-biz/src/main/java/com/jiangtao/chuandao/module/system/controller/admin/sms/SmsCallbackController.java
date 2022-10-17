@@ -2,10 +2,11 @@ package com.jiangtao.chuandao.module.system.controller.admin.sms;
 
 import cn.hutool.core.util.URLUtil;
 import cn.hutool.extra.servlet.ServletUtil;
-import cn.iocoder.yudao.module.system.service.sms.SmsSendService;
-import cn.iocoder.yudao.framework.common.pojo.CommonResult;
+
+import com.jiangtao.chuandao.framework.common.pojo.CommonResult;
 import com.jiangtao.chuandao.framework.operatelog.core.annotations.OperateLog;
-import cn.iocoder.yudao.framework.sms.core.enums.SmsChannelEnum;
+import com.jiangtao.chuandao.framework.sms.core.enums.SmsChannelEnum;
+import com.jiangtao.chuandao.module.system.service.sms.SmsSendService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
@@ -18,7 +19,8 @@ import javax.annotation.Resource;
 import javax.annotation.security.PermitAll;
 import javax.servlet.http.HttpServletRequest;
 
-import static cn.iocoder.yudao.framework.common.pojo.CommonResult.success;
+import static com.jiangtao.chuandao.framework.common.pojo.CommonResult.success;
+
 
 @Api(tags = "管理后台 - 短信回调")
 @RestController

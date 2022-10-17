@@ -1,6 +1,7 @@
 package com.jiangtao.chuandao.module.system.api.dept;
 
 import com.jiangtao.chuandao.module.system.api.dept.dto.DeptRespDTO;
+import com.jiangtao.chuandao.module.system.convert.dept.DeptConvert;
 import com.jiangtao.chuandao.module.system.dal.dataobject.dept.DeptDO;
 import com.jiangtao.chuandao.module.system.service.dept.DeptService;
 import org.springframework.stereotype.Service;

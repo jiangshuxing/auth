@@ -1,19 +1,19 @@
 package com.jiangtao.chuandao.module.system.controller.admin.user;
 
 import cn.hutool.core.collection.CollUtil;
-import cn.iocoder.yudao.module.system.controller.admin.user.vo.user.*;
-import cn.iocoder.yudao.module.system.convert.user.UserConvert;
-import cn.iocoder.yudao.module.system.dal.dataobject.dept.DeptDO;
-import cn.iocoder.yudao.module.system.dal.dataobject.user.AdminUserDO;
-import cn.iocoder.yudao.module.system.service.dept.DeptService;
-import cn.iocoder.yudao.module.system.service.user.AdminUserService;
-import cn.iocoder.yudao.module.system.enums.common.SexEnum;
-import cn.iocoder.yudao.framework.common.enums.CommonStatusEnum;
-import cn.iocoder.yudao.framework.common.pojo.CommonResult;
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.common.util.collection.MapUtils;
-import cn.iocoder.yudao.framework.excel.core.util.ExcelUtils;
+import com.jiangtao.chuandao.framework.common.enums.CommonStatusEnum;
+import com.jiangtao.chuandao.framework.common.pojo.CommonResult;
+import com.jiangtao.chuandao.framework.common.pojo.PageResult;
+import com.jiangtao.chuandao.framework.common.util.collection.MapUtils;
+import com.jiangtao.chuandao.framework.excel.core.util.ExcelUtils;
 import com.jiangtao.chuandao.framework.operatelog.core.annotations.OperateLog;
+import com.jiangtao.chuandao.module.system.controller.admin.user.vo.user.*;
+import com.jiangtao.chuandao.module.system.convert.user.UserConvert;
+import com.jiangtao.chuandao.module.system.dal.dataobject.dept.DeptDO;
+import com.jiangtao.chuandao.module.system.dal.dataobject.user.AdminUserDO;
+import com.jiangtao.chuandao.module.system.enums.common.SexEnum;
+import com.jiangtao.chuandao.module.system.service.dept.DeptService;
+import com.jiangtao.chuandao.module.system.service.user.AdminUserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
@@ -29,9 +29,9 @@ import javax.validation.Valid;
 import java.io.IOException;
 import java.util.*;
 
-import static cn.iocoder.yudao.framework.common.pojo.CommonResult.success;
-import static cn.iocoder.yudao.framework.common.util.collection.CollectionUtils.convertList;
-import static cn.iocoder.yudao.framework.common.util.collection.CollectionUtils.convertSet;
+import static com.jiangtao.chuandao.framework.common.pojo.CommonResult.success;
+import static com.jiangtao.chuandao.framework.common.util.collection.CollectionUtils.convertList;
+import static com.jiangtao.chuandao.framework.common.util.collection.CollectionUtils.convertSet;
 import static com.jiangtao.chuandao.framework.operatelog.core.enums.OperateTypeEnum.EXPORT;
 
 @Api(tags = "管理后台 - 用户")

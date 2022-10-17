@@ -1,9 +1,9 @@
 package com.jiangtao.chuandao.module.system.api.sms;
 
-import cn.iocoder.yudao.module.system.api.sms.dto.code.SmsCodeCheckReqDTO;
-import cn.iocoder.yudao.module.system.api.sms.dto.code.SmsCodeSendReqDTO;
-import cn.iocoder.yudao.module.system.api.sms.dto.code.SmsCodeUseReqDTO;
-import cn.iocoder.yudao.module.system.service.sms.SmsCodeService;
+import com.jiangtao.chuandao.module.system.api.sms.dto.code.SmsCodeCheckReqDTO;
+import com.jiangtao.chuandao.module.system.api.sms.dto.code.SmsCodeSendReqDTO;
+import com.jiangtao.chuandao.module.system.api.sms.dto.code.SmsCodeUseReqDTO;
+import com.jiangtao.chuandao.module.system.service.sms.SmsCodeService;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 

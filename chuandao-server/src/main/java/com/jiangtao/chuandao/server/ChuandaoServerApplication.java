@@ -22,18 +22,7 @@ public class ChuandaoServerApplication {
         // 如果你碰到启动的问题，请认真阅读 https://doc.iocoder.cn/quick-start/ 文章
         // 如果你碰到启动的问题，请认真阅读 https://doc.iocoder.cn/quick-start/ 文章
 
-//        long begin = System.currentTimeMillis() ;
         SpringApplication.run(ChuandaoServerApplication.class, args);
-        long  begin = System.currentTimeMillis() ;
-        Runtime.getRuntime().addShutdownHook(new Thread(new Runnable() {
-            @Override
-            public void run() {
-                long end = System.currentTimeMillis() ;
-//                StackTraceElement[] cc  =   Thread.currentThread().g();
-//                System.out.println(JSONUtil.toJsonStr(cc));
-                System.out.println("我被关闭了，"+(end-begin)/1000 +" s");
-            }
-        }));
 
         // 如果你碰到启动的问题，请认真阅读 https://doc.iocoder.cn/quick-start/ 文章
         // 如果你碰到启动的问题，请认真阅读 https://doc.iocoder.cn/quick-start/ 文章

@@ -1,9 +1,9 @@
 package com.jiangtao.chuandao.module.system.api.dict;
 
-import cn.iocoder.yudao.module.system.api.dict.dto.DictDataRespDTO;
-import cn.iocoder.yudao.module.system.convert.dict.DictDataConvert;
-import cn.iocoder.yudao.module.system.dal.dataobject.dict.DictDataDO;
-import cn.iocoder.yudao.module.system.service.dict.DictDataService;
+import com.jiangtao.chuandao.module.system.api.dict.dto.DictDataRespDTO;
+import com.jiangtao.chuandao.module.system.convert.dict.DictDataConvert;
+import com.jiangtao.chuandao.module.system.dal.dataobject.dict.DictDataDO;
+import com.jiangtao.chuandao.module.system.service.dict.DictDataService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;

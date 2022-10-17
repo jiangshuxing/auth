@@ -1,6 +1,6 @@
 package com.jiangtao.chuandao.module.system.api.sensitiveword;
 
-import cn.iocoder.yudao.module.system.service.sensitiveword.SensitiveWordService;
+import com.jiangtao.chuandao.module.system.service.sensitiveword.SensitiveWordService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;

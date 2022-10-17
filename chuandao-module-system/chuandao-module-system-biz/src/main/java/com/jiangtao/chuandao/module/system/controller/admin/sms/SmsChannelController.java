@@ -1,11 +1,11 @@
 package com.jiangtao.chuandao.module.system.controller.admin.sms;
 
-import cn.iocoder.yudao.module.system.controller.admin.sms.vo.channel.*;
-import cn.iocoder.yudao.module.system.convert.sms.SmsChannelConvert;
-import cn.iocoder.yudao.module.system.dal.dataobject.sms.SmsChannelDO;
-import cn.iocoder.yudao.module.system.service.sms.SmsChannelService;
-import cn.iocoder.yudao.framework.common.pojo.CommonResult;
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
+import com.jiangtao.chuandao.framework.common.pojo.CommonResult;
+import com.jiangtao.chuandao.framework.common.pojo.PageResult;
+import com.jiangtao.chuandao.module.system.controller.admin.sms.vo.channel.*;
+import com.jiangtao.chuandao.module.system.convert.sms.SmsChannelConvert;
+import com.jiangtao.chuandao.module.system.dal.dataobject.sms.SmsChannelDO;
+import com.jiangtao.chuandao.module.system.service.sms.SmsChannelService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
@@ -17,7 +17,8 @@ import javax.validation.Valid;
 import java.util.Comparator;
 import java.util.List;
 
-import static cn.iocoder.yudao.framework.common.pojo.CommonResult.success;
+import static com.jiangtao.chuandao.framework.common.pojo.CommonResult.success;
+
 
 @Api(tags = "管理后台 - 短信渠道")
 @RestController

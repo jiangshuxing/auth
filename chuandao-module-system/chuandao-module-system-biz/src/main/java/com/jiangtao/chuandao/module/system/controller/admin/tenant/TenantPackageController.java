@@ -1,12 +1,12 @@
 package com.jiangtao.chuandao.module.system.controller.admin.tenant;
 
-import cn.iocoder.yudao.framework.common.enums.CommonStatusEnum;
-import cn.iocoder.yudao.framework.common.pojo.CommonResult;
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.module.system.controller.admin.tenant.vo.packages.*;
-import cn.iocoder.yudao.module.system.convert.tenant.TenantPackageConvert;
-import cn.iocoder.yudao.module.system.dal.dataobject.tenant.TenantPackageDO;
-import cn.iocoder.yudao.module.system.service.tenant.TenantPackageService;
+import com.jiangtao.chuandao.framework.common.enums.CommonStatusEnum;
+import com.jiangtao.chuandao.framework.common.pojo.CommonResult;
+import com.jiangtao.chuandao.framework.common.pojo.PageResult;
+import com.jiangtao.chuandao.module.system.controller.admin.tenant.vo.packages.*;
+import com.jiangtao.chuandao.module.system.convert.tenant.TenantPackageConvert;
+import com.jiangtao.chuandao.module.system.dal.dataobject.tenant.TenantPackageDO;
+import com.jiangtao.chuandao.module.system.service.tenant.TenantPackageService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
@@ -18,7 +18,8 @@ import javax.annotation.Resource;
 import javax.validation.Valid;
 import java.util.List;
 
-import static cn.iocoder.yudao.framework.common.pojo.CommonResult.success;
+import static com.jiangtao.chuandao.framework.common.pojo.CommonResult.success;
+
 
 @Api(tags = "管理后台 - 租户套餐")
 @RestController

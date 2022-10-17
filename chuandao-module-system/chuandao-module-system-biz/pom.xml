@@ -119,11 +119,12 @@
 <!--            <scope>test</scope>-->
 <!--        </dependency>-->
 
-<!--        &lt;!&ndash; 工具类相关 &ndash;&gt;-->
-<!--        <dependency>-->
-<!--            <groupId>cn.iocoder.boot</groupId>-->
-<!--            <artifactId>yudao-spring-boot-starter-excel</artifactId>-->
-<!--        </dependency>-->
+        <!-- 工具类相关 -->
+        <dependency>
+            <groupId>com.jiangtao</groupId>
+            <artifactId>chuandao-spring-boot-starter-excel</artifactId>
+            <version>${revision}</version>
+        </dependency>
 
     </dependencies>
 

@@ -1,7 +1,7 @@
 package com.jiangtao.chuandao.module.system.api.permission;
 
-import cn.iocoder.yudao.module.system.api.permission.dto.DeptDataPermissionRespDTO;
-import cn.iocoder.yudao.module.system.service.permission.PermissionService;
+import com.jiangtao.chuandao.module.system.api.permission.dto.DeptDataPermissionRespDTO;
+import com.jiangtao.chuandao.module.system.service.permission.PermissionService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;

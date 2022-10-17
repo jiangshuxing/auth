@@ -1,13 +1,14 @@
 package com.jiangtao.chuandao.module.system.controller.admin.dict;
 
-import cn.iocoder.yudao.module.system.dal.dataobject.dict.DictDataDO;
-import cn.iocoder.yudao.framework.common.pojo.CommonResult;
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.excel.core.util.ExcelUtils;
+
+import com.jiangtao.chuandao.framework.common.pojo.CommonResult;
+import com.jiangtao.chuandao.framework.common.pojo.PageResult;
+import com.jiangtao.chuandao.framework.excel.core.util.ExcelUtils;
 import com.jiangtao.chuandao.framework.operatelog.core.annotations.OperateLog;
-import cn.iocoder.yudao.module.system.controller.admin.dict.vo.data.*;
-import cn.iocoder.yudao.module.system.convert.dict.DictDataConvert;
-import cn.iocoder.yudao.module.system.service.dict.DictDataService;
+import com.jiangtao.chuandao.module.system.controller.admin.dict.vo.data.*;
+import com.jiangtao.chuandao.module.system.convert.dict.DictDataConvert;
+import com.jiangtao.chuandao.module.system.dal.dataobject.dict.DictDataDO;
+import com.jiangtao.chuandao.module.system.service.dict.DictDataService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
@@ -21,7 +22,7 @@ import javax.validation.Valid;
 import java.io.IOException;
 import java.util.List;
 
-import static cn.iocoder.yudao.framework.common.pojo.CommonResult.success;
+import static com.jiangtao.chuandao.framework.common.pojo.CommonResult.success;
 import static com.jiangtao.chuandao.framework.operatelog.core.enums.OperateTypeEnum.EXPORT;
 
 @Api(tags = "管理后台 - 字典数据")

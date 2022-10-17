@@ -1,7 +1,7 @@
 package com.jiangtao.chuandao.module.system.api.logger;
 
-import cn.iocoder.yudao.module.system.api.logger.dto.OperateLogCreateReqDTO;
-import cn.iocoder.yudao.module.system.service.logger.OperateLogService;
+import com.jiangtao.chuandao.module.system.api.logger.dto.OperateLogCreateReqDTO;
+import com.jiangtao.chuandao.module.system.service.logger.OperateLogService;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 

@@ -8,12 +8,21 @@ import com.jiangtao.chuandao.framework.common.util.monitor.TracerUtils;
 import com.jiangtao.chuandao.framework.common.util.servlet.ServletUtils;
 import com.jiangtao.chuandao.framework.common.util.validation.ValidationUtils;
 import com.jiangtao.chuandao.module.system.api.logger.dto.LoginLogCreateReqDTO;
+import com.jiangtao.chuandao.module.system.api.sms.SmsCodeApi;
+import com.jiangtao.chuandao.module.system.api.social.dto.SocialUserBindReqDTO;
+import com.jiangtao.chuandao.module.system.controller.admin.auth.vo.*;
 import com.jiangtao.chuandao.module.system.convert.auth.AuthConvert;
 import com.jiangtao.chuandao.module.system.dal.dataobject.oauth2.OAuth2AccessTokenDO;
+import com.jiangtao.chuandao.module.system.dal.dataobject.user.AdminUserDO;
+import com.jiangtao.chuandao.module.system.enums.logger.LoginLogTypeEnum;
+import com.jiangtao.chuandao.module.system.enums.logger.LoginResultEnum;
 import com.jiangtao.chuandao.module.system.enums.oauth2.OAuth2ClientConstants;
+import com.jiangtao.chuandao.module.system.enums.sms.SmsSceneEnum;
 import com.jiangtao.chuandao.module.system.service.common.CaptchaService;
 import com.jiangtao.chuandao.module.system.service.logger.LoginLogService;
+import com.jiangtao.chuandao.module.system.service.member.MemberService;
 import com.jiangtao.chuandao.module.system.service.oauth2.OAuth2TokenService;
+import com.jiangtao.chuandao.module.system.service.social.SocialUserService;
 import com.jiangtao.chuandao.module.system.service.user.AdminUserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -21,6 +30,10 @@ import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
 import javax.validation.Validator;
 import java.util.Objects;
+
+import static com.jiangtao.chuandao.framework.common.exception.util.ServiceExceptionUtil.exception;
+import static com.jiangtao.chuandao.framework.common.util.servlet.ServletUtils.getClientIP;
+import static com.jiangtao.chuandao.module.system.enums.ErrorCodeConstants.*;
 
 
 /**
@@ -151,12 +164,12 @@ public class AdminAuthServiceImpl implements AdminAuthService {
         reqDTO.setUserType(getUserType().getValue());
         reqDTO.setUsername(username);
         reqDTO.setUserAgent(ServletUtils.getUserAgent());
-        reqDTO.setUserIp(ServletUtils.getClientIP());
+        reqDTO.setUserIp(getClientIP());
         reqDTO.setResult(loginResult.getResult());
         loginLogService.createLoginLog(reqDTO);
         // 更新最后登录时间
         if (userId != null && Objects.equals(LoginResultEnum.SUCCESS.getResult(), loginResult.getResult())) {
-            userService.updateUserLogin(userId, ServletUtils.getClientIP());
+            userService.updateUserLogin(userId, getClientIP());
         }
     }
 
@@ -218,7 +231,7 @@ public class AdminAuthServiceImpl implements AdminAuthService {
             reqDTO.setUsername(memberService.getMemberUserMobile(userId));
         }
         reqDTO.setUserAgent(ServletUtils.getUserAgent());
-        reqDTO.setUserIp(ServletUtils.getClientIP());
+        reqDTO.setUserIp(getClientIP());
         reqDTO.setResult(LoginResultEnum.SUCCESS.getResult());
         loginLogService.createLoginLog(reqDTO);
     }

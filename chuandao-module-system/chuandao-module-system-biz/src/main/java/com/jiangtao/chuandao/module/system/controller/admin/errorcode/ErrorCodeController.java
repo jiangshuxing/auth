@@ -1,13 +1,13 @@
 package com.jiangtao.chuandao.module.system.controller.admin.errorcode;
 
-import cn.iocoder.yudao.framework.common.pojo.CommonResult;
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.excel.core.util.ExcelUtils;
+import com.jiangtao.chuandao.framework.common.pojo.CommonResult;
+import com.jiangtao.chuandao.framework.common.pojo.PageResult;
+import com.jiangtao.chuandao.framework.excel.core.util.ExcelUtils;
 import com.jiangtao.chuandao.framework.operatelog.core.annotations.OperateLog;
-import cn.iocoder.yudao.module.system.convert.errorcode.ErrorCodeConvert;
-import cn.iocoder.yudao.module.system.controller.admin.errorcode.vo.*;
-import cn.iocoder.yudao.module.system.dal.dataobject.errorcode.ErrorCodeDO;
-import cn.iocoder.yudao.module.system.service.errorcode.ErrorCodeService;
+import com.jiangtao.chuandao.module.system.controller.admin.errorcode.vo.*;
+import com.jiangtao.chuandao.module.system.convert.errorcode.ErrorCodeConvert;
+import com.jiangtao.chuandao.module.system.dal.dataobject.errorcode.ErrorCodeDO;
+import com.jiangtao.chuandao.module.system.service.errorcode.ErrorCodeService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
@@ -21,7 +21,7 @@ import javax.validation.Valid;
 import java.io.IOException;
 import java.util.List;
 
-import static cn.iocoder.yudao.framework.common.pojo.CommonResult.success;
+import static com.jiangtao.chuandao.framework.common.pojo.CommonResult.success;
 import static com.jiangtao.chuandao.framework.operatelog.core.enums.OperateTypeEnum.EXPORT;
 
 @Api(tags = "管理后台 - 错误码")

@@ -1,6 +1,6 @@
 package com.jiangtao.chuandao.module.system.api.tenant;
 
-import cn.iocoder.yudao.module.system.service.tenant.TenantService;
+import com.jiangtao.chuandao.module.system.service.tenant.TenantService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;

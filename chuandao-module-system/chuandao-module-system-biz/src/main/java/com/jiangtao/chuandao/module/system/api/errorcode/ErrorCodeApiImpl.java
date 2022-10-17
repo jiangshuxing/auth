@@ -1,8 +1,7 @@
 package com.jiangtao.chuandao.module.system.api.errorcode;
-
-import cn.iocoder.yudao.module.system.api.errorcode.dto.ErrorCodeAutoGenerateReqDTO;
-import cn.iocoder.yudao.module.system.api.errorcode.dto.ErrorCodeRespDTO;
-import cn.iocoder.yudao.module.system.service.errorcode.ErrorCodeService;
+import com.jiangtao.chuandao.module.system.api.errorcode.dto.ErrorCodeAutoGenerateReqDTO;
+import com.jiangtao.chuandao.module.system.api.errorcode.dto.ErrorCodeRespDTO;
+import com.jiangtao.chuandao.module.system.service.errorcode.ErrorCodeService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;

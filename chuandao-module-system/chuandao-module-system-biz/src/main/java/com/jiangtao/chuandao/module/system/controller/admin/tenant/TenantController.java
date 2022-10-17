@@ -1,13 +1,13 @@
 package com.jiangtao.chuandao.module.system.controller.admin.tenant;
 
-import cn.iocoder.yudao.framework.common.pojo.CommonResult;
-import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.excel.core.util.ExcelUtils;
+import com.jiangtao.chuandao.framework.common.pojo.CommonResult;
+import com.jiangtao.chuandao.framework.common.pojo.PageResult;
+import com.jiangtao.chuandao.framework.excel.core.util.ExcelUtils;
 import com.jiangtao.chuandao.framework.operatelog.core.annotations.OperateLog;
-import cn.iocoder.yudao.module.system.controller.admin.tenant.vo.tenant.*;
-import cn.iocoder.yudao.module.system.convert.tenant.TenantConvert;
-import cn.iocoder.yudao.module.system.dal.dataobject.tenant.TenantDO;
-import cn.iocoder.yudao.module.system.service.tenant.TenantService;
+import com.jiangtao.chuandao.module.system.controller.admin.tenant.vo.tenant.*;
+import com.jiangtao.chuandao.module.system.convert.tenant.TenantConvert;
+import com.jiangtao.chuandao.module.system.dal.dataobject.tenant.TenantDO;
+import com.jiangtao.chuandao.module.system.service.tenant.TenantService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
@@ -21,7 +21,7 @@ import javax.validation.Valid;
 import java.io.IOException;
 import java.util.List;
 
-import static cn.iocoder.yudao.framework.common.pojo.CommonResult.success;
+import static com.jiangtao.chuandao.framework.common.pojo.CommonResult.success;
 import static com.jiangtao.chuandao.framework.operatelog.core.enums.OperateTypeEnum.EXPORT;
 
 @Api(tags = "管理后台 - 租户")

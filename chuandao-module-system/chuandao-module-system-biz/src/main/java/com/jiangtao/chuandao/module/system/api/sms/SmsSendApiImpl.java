@@ -1,7 +1,7 @@
 package com.jiangtao.chuandao.module.system.api.sms;
 
-import cn.iocoder.yudao.module.system.api.sms.dto.send.SmsSendSingleToUserReqDTO;
-import cn.iocoder.yudao.module.system.service.sms.SmsSendService;
+import com.jiangtao.chuandao.module.system.api.sms.dto.send.SmsSendSingleToUserReqDTO;
+import com.jiangtao.chuandao.module.system.service.sms.SmsSendService;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 

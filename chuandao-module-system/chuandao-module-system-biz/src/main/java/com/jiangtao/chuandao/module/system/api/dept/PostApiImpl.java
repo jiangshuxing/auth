@@ -1,6 +1,6 @@
 package com.jiangtao.chuandao.module.system.api.dept;
 
-import cn.iocoder.yudao.module.system.service.dept.PostService;
+import com.jiangtao.chuandao.module.system.service.dept.PostService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;

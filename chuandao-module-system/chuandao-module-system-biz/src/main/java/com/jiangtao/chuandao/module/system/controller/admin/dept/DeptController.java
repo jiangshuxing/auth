@@ -1,11 +1,11 @@
 package com.jiangtao.chuandao.module.system.controller.admin.dept;
 
-import cn.iocoder.yudao.framework.common.enums.CommonStatusEnum;
-import cn.iocoder.yudao.framework.common.pojo.CommonResult;
-import cn.iocoder.yudao.module.system.controller.admin.dept.vo.dept.*;
-import cn.iocoder.yudao.module.system.convert.dept.DeptConvert;
-import cn.iocoder.yudao.module.system.dal.dataobject.dept.DeptDO;
-import cn.iocoder.yudao.module.system.service.dept.DeptService;
+import com.jiangtao.chuandao.framework.common.enums.CommonStatusEnum;
+import com.jiangtao.chuandao.framework.common.pojo.CommonResult;
+import com.jiangtao.chuandao.module.system.controller.admin.dept.vo.dept.*;
+import com.jiangtao.chuandao.module.system.convert.dept.DeptConvert;
+import com.jiangtao.chuandao.module.system.dal.dataobject.dept.DeptDO;
+import com.jiangtao.chuandao.module.system.service.dept.DeptService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
@@ -18,7 +18,7 @@ import javax.validation.Valid;
 import java.util.Comparator;
 import java.util.List;
 
-import static cn.iocoder.yudao.framework.common.pojo.CommonResult.success;
+import static com.jiangtao.chuandao.framework.common.pojo.CommonResult.success;
 
 @Api(tags = "管理后台 - 部门")
 @RestController

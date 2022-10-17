@@ -1,6 +1,6 @@
 package com.jiangtao.chuandao.module.system.api.permission;
 
-import cn.iocoder.yudao.module.system.service.permission.RoleService;
+import com.jiangtao.chuandao.module.system.service.permission.RoleService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
